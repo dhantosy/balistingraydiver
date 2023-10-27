@@ -30,7 +30,7 @@ const styles = css`
   }
 
   body {
-    font-family: sans-serif;
+    font-family: var(--font-open-sans), sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -54,6 +54,7 @@ const styles = css`
     box-shadow: none;
     border: none;
     cursor: pointer;
+    font-family: var(--font-josefin-sans), sans-serif;
   }
 
   a,
@@ -80,7 +81,14 @@ const styles = css`
   }
 
   p {
-    line-height: 1.2;
+    line-height: 1.4;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-josefin-sans), sans-serif;
   }
 
 `;

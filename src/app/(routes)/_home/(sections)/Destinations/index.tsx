@@ -60,7 +60,7 @@ export default function Destinations() {
                   <BoxContent>
                     <BoxTitle>{title}</BoxTitle>
                     <BoxSubtitle>{subtitle}</BoxSubtitle>
-                    <BoxMore>Learn More</BoxMore>
+                    <BoxMore>Read More</BoxMore>
                   </BoxContent>
                 </Link>
               </BoxWrapper>

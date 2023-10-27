@@ -11,10 +11,10 @@ export default function Hero() {
           autoPlay
           loop
           muted
-          poster='/assets/images/video-poster.jpg'
+          poster='/assets/images/video-dive-poster.jpg'
         >
           <source
-            src='/assets/images/video.mp4'
+            src='/assets/images/video-dive.mp4'
           />
         </video>
       </VideoWrapper>

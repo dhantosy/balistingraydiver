@@ -15,11 +15,10 @@ export const Title = styled.h2`
   margin: 0;
 `;
 
-export const Subtitle = styled.h3`
+export const Subtitle = styled.p`
   font-size: 18px;
   font-weight: 400;
-  margin: 20px 0 50px;
-  line-height: 1.2;
+  line-height: 1.4;
   max-width: 800px;
   margin: 25px auto;
 `;
@@ -35,7 +34,6 @@ export const BoxContainer = styled.div`
 
 export const BoxWrapper = styled.div`
   flex: 1 1 30%;
-  height: 100px;
   position: relative;
   height: 500px;
   background-position: center;

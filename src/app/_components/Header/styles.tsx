@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import theme from '@/styles/theme';
 
 export const HeaderNav = styled.header`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;

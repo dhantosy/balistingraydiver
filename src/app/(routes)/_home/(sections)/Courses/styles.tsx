@@ -10,13 +10,13 @@ export const Heading = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   margin: 0;
 `;
 
 export const Subtitle = styled.p`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
   max-width: 800px;
@@ -27,7 +27,7 @@ export const BoxContainer = styled.div`
   margin: 60px 0 0;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: normal;
   justify-content: center;
   gap: 30px;
 `;
@@ -35,7 +35,6 @@ export const BoxContainer = styled.div`
 export const BoxWrapper = styled.div`
   flex: 1 1 20%;
   position: relative;
-  height: 350px;
   background-color: #f2f2f4;
   border-radius: 10px;
   overflow: hidden;
@@ -51,9 +50,13 @@ export const BoxContent = styled.div`
 `;
 
 export const BoxContentTop = styled.div`
-  margin: 50px 0 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 0;
   padding: 25px;
+  text-align: center;
+  min-height: 300px;
 `;
 
 export const BoxTitle = styled.h4`
@@ -63,14 +66,7 @@ export const BoxTitle = styled.h4`
   margin: 0;
   line-height: 1.2;
   font-weight: 900;
-`;
-
-export const BoxPretitle = styled.h4`
-  font-size: 16px;
-  text-transform: uppercase;
-  color: ${theme.colors.blueMain};
-  margin: 0 0 8px;
-  font-weight: 600;
+  margin: 40px 0 0;
 `;
 
 export const BoxSubtitle = styled.p`

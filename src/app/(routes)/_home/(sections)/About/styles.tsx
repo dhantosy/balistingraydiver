@@ -28,9 +28,11 @@ export const GridContent = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
+  line-height: 1.2;
   margin: 0 0 20px;
+  color: ${theme.colors.cyan};
 `;
 
 export const VideoWrapper = styled.div`
@@ -41,6 +43,17 @@ export const VideoWrapper = styled.div`
     height: 100%;
     z-index: 1;
     overflow: hidden;
+    width: 100%;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    left: 0;
+    top: 0;
   }
 `;
 
@@ -59,5 +72,17 @@ export const Video = styled.video`
 
 export const Text = styled.div`
   opacity: 0.9;
+`;
+
+export const ImageWrapper = styled.div`
+  display: inline-flex;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  margin-top: -160px;
+  margin-left: -125px;
 `;
 

@@ -1,9 +1,10 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
-import { FaAngleRight } from 'react-icons/fa'
+import { FaAngleRight, FaWater } from 'react-icons/fa'
 import Container from '@/app/_components/Container'
-import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer, BoxPretitle, BoxContentTop, BoxIcon } from './styles'
+import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer, BoxContentTop, BoxIcon } from './styles'
 
 const sites = [
   {
@@ -34,7 +35,7 @@ export default function Courses() {
       <Container>
         <Heading>
           <Title>Diving Courses</Title>
-          <Subtitle>PADI Dive courses are designed to provide comprehensive training and knowledge for individuals who are eager to explore the underwater world. Led by certified and experienced instructors, we cover all topics including theory, equipments, safety procedures, and underwater communication.</Subtitle>
+          <Subtitle>PADI Dive courses are designed to provide comprehensive training and knowledge for individuals who are eager to explore the underwater world.</Subtitle>
         </Heading>
         <BoxContainer>
           {sites.map(({ title, subtitle, link }) => {
@@ -44,7 +45,14 @@ export default function Courses() {
                 <Link href={link}>
                   <BoxContent>
                     <BoxContentTop>
-                      <BoxPretitle>PADI</BoxPretitle>
+                      <Image
+                        src="/assets/images/padi-logo.png"
+                        alt="Bali Stingray Diver"
+                        sizes={`100vw, 33vw`}
+                        priority
+                        width='75'
+                        height='75'
+                      />
                       <BoxTitle>{title}</BoxTitle>
                       <BoxSubtitle>{subtitle}</BoxSubtitle>
                     </BoxContentTop>

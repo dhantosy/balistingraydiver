@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import { FaArrowRight } from 'react-icons/fa'
 import Container from '@/app/_components/Container'
-import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer } from './styles'
+import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer, BoxArrow } from './styles'
 
 const sites = [
   {
@@ -14,31 +15,31 @@ const sites = [
   {
     title: 'Padang Bai',
     subtitle: 'Colourful and diverse marine life Perfect for snorkelling Padang Bai diving trip is ideal for macro photography.',
-    image: '/assets/images/nusa-penida.jpg',
+    image: '/assets/images/gallery-2.jpg',
     link: '/',
   },
   {
     title: 'Amed',
     subtitle: 'Amed diving trip is a hidden gem in the North East of Bali Combination of natural and artificial reefs is Perfect for photography.',
-    image: '/assets/images/nusa-penida.jpg',
+    image: '/assets/images/gallery-3.jpg',
     link: '/',
   },
   {
     title: 'Tulamben',
     subtitle: 'USAT Liberty Shipwreck (1942) Colourful and diverse marine life Tulamben diving is an excellent site for Beginners to Expert.',
-    image: '/assets/images/nusa-penida.jpg',
+    image: '/assets/images/gallery-6.jpg',
     link: '/',
   },
   {
     title: 'Gili Tepekong',
     subtitle: 'Gili Tepekong & Mimpang diving trip is suitable for experienced divers. The abundance of marine life Shark encounters',
-    image: '/assets/images/nusa-penida.jpg',
+    image: '/assets/images/gallery-1.jpg',
     link: '/',
   },
   {
     title: 'Menjangan',
-    subtitle: 'Menjangan is full of nooks and crannies, overhangs and crevasses with soft corals, sponges, and Bali’s highest concentration of Gorgonian seafans.',
-    image: '/assets/images/nusa-penida.jpg',
+    subtitle: 'We can see  Turtles, Fire Dartfish, Red-Toothed Triggerfish, Wall diving, Nudibranchs, Orangutan Crabs Bat fish, Blue dogtooth tuna, Tip Reef in Menjangan',
+    image: '/assets/images/gallery-4.jpg',
     link: '/',
   },
 ]
@@ -60,7 +61,12 @@ export default function Destinations() {
                   <BoxContent>
                     <BoxTitle>{title}</BoxTitle>
                     <BoxSubtitle>{subtitle}</BoxSubtitle>
-                    <BoxMore>Read More</BoxMore>
+                    <BoxMore>
+                      Read More
+                      <BoxArrow>
+                        <FaArrowRight />
+                      </BoxArrow>
+                    </BoxMore>
                   </BoxContent>
                 </Link>
               </BoxWrapper>

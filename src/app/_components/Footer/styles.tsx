@@ -45,6 +45,7 @@ export const GalleryHeadingSocial = styled.div`
   gap: 10px;
   font-size: 18px;
   font-weight: 600;
+  color: ${theme.colors.cyan};
 `;
 
 export const GalleryHeadingSocialArrow = styled.div`
@@ -97,7 +98,7 @@ export const Info = styled.div`
 `;
 
 export const InfoIcon = styled.span`
-  height: 18px;
+  width: 18px;
   position: relative;
   top: 4px;
 `;

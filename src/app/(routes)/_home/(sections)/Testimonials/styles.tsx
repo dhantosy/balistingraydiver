@@ -11,7 +11,7 @@ export const Heading = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   margin: 0;
 `;

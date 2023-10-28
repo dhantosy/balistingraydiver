@@ -81,7 +81,7 @@ const styles = css`
   }
 
   p {
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   h1,
@@ -89,6 +89,14 @@ const styles = css`
   h3,
   h4 {
     font-family: var(--font-josefin-sans), sans-serif;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 30px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #20C7CA;
   }
 
 `;

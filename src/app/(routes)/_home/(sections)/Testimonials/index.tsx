@@ -1,40 +1,77 @@
 'use client'
 
+import { Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { FaStar, FaQuoteLeft } from 'react-icons/fa'
 import Container from '@/app/_components/Container'
-import { Section, Title, Subtitle, Heading, BoxContainer } from './styles'
+import { Section, Title, Name, Subtitle, Source, Heading, BoxContainer, Rating, Quote } from './styles'
 
-const sites = [
+const data = [
   {
-    title: 'Open Water',
-    subtitle: 'Beginner PADI certification that will teach you the skills to dive safely and independently anywhere in the world.',
-    link: '/',
+    name: 'Joni Kumpulainen',
+    title: 'This was my fifth fun dive dip. I feel safe all time. We saw lot of big turtles, octopussy and lot of corals and colorfull fishes. Our instructor was funny guy and show tricks under the water.',
+    source: 'Google Review',
   },
   {
-    title: 'Advanced Open Water',
-    subtitle: 'Dive to 30m deep and helps build confidence to advance diving skills through various adventure dives.',
-    link: '/',
+    name: 'Suhair Suhaimi',
+    title: 'Excellent dive shop! Spent 4 days with them, no fuss, flexible, and most importantly, safe divers. Had the pleasure of diving with guides Jance and Gede who took care of me the whole time 🤩 Will not disappoint!',
+    source: 'Google Review',
   },
   {
-    title: 'Rescue Diver',
-    subtitle: 'A step towards going Pro or Master Scuba Diver and become a safer buddy with the PADI Rescue diver course.',
-    link: '/',
+    name: 'Jennifer Ho',
+    title: 'I have dive with Bali Stingray for more than 10 years and each trip never fails. The Bali Stingray crew not only took me on guaranteed sightings but captured memorable videos too!',
+    source: 'Google Review',
   },
   {
-    title: 'Divemaster',
-    subtitle: 'Act as a certified assistant to PADI Instructors!',
-    link: '/',
+    name: 'Roy Huang',
+    title: 'I wholeheartedly recommend Bali Stingray Divers for their outstanding services. The meticulous maintenance of personal dive gears, and the luxurious accommodations, Bali Stingray Divers truly deserves praise for providing an exceptional diving adventure.',
+    source: 'Google Review',
   },
 ]
 
 export default function Testimonials() {
   return (
-    <Section id='dive-courses'>
+    <Section id='testimonials'>
       <Container>
         <Heading>
           <Title>What Our Clients Say</Title>
         </Heading>
         <BoxContainer>
-          
+          <Swiper
+            loop
+            modules={[Autoplay, Pagination]}
+            pagination={{ clickable: true }}
+            spaceBetween={80}
+            autoplay
+            breakpoints={{
+              1: {
+                slidesPerView: 1,
+              },
+              980: {
+                slidesPerView: 2,
+              },
+            }}
+            slidesPerView={2}
+          >
+            {data.map(({name, title, source}) => {
+
+              return (
+                <SwiperSlide key={name}>
+                  <Quote><FaQuoteLeft /></Quote>
+                  <Name>{name}</Name>
+                  <Subtitle>{title}</Subtitle>
+                  <Rating>
+                    {Array.apply(null, Array(5)).map((_, i) => {
+                      return (
+                        <FaStar key={i} />
+                      )
+                    })}
+                  </Rating>
+                  <Source>{`Source: ${source}`}</Source>
+                </SwiperSlide>
+              )
+            })}
+          </Swiper>
         </BoxContainer>
       </Container>
     </Section>

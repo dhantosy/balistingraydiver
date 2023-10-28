@@ -1,3 +1,7 @@
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/pagination';
+
 import type { Metadata } from 'next'
 import Footer from '@/app/_components/Footer'
 import Header from '@/app/_components/Header'

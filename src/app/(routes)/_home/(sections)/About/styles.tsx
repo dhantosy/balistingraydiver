@@ -57,3 +57,7 @@ export const Video = styled.video`
   width: auto;
 `;
 
+export const Text = styled.div`
+  opacity: 0.9;
+`;
+

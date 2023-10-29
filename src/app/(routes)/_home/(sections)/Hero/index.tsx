@@ -5,7 +5,7 @@ import { Section, Content, VideoWrapper, Title, Subtitle, Button } from './style
 
 export default function Hero() {
   return (
-    <Section>
+    <Section id='intro-banner'>
       <VideoWrapper>
         <video
           autoPlay

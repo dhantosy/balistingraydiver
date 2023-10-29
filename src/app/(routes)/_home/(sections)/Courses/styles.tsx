@@ -63,10 +63,9 @@ export const BoxTitle = styled.h4`
   font-size: 20px;
   text-transform: uppercase;
   color: ${theme.colors.blueMain};
-  margin: 0;
   line-height: 1.2;
   font-weight: 900;
-  margin: 40px 0 0;
+  margin: 30px 0 0;
 `;
 
 export const BoxSubtitle = styled.p`

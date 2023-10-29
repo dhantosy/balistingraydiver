@@ -10,10 +10,10 @@ export const Grid = styled.div`
     flex: 1;
     position: relative;
     overflow: hidden;
+    background-color: ${theme.colors.blueMain};
   }
 
   &:first-child {
-    background-color: ${theme.colors.blueMain};
     color: ${theme.colors.white};
   }
 `;
@@ -44,6 +44,7 @@ export const VideoWrapper = styled.div`
     z-index: 1;
     overflow: hidden;
     width: 100%;
+    background-color: ${theme.colors.blueMain};
   }
 
   &:after {
@@ -68,6 +69,8 @@ export const Subtitle = styled.h3`
 
 export const Video = styled.video`
   width: auto;
+  position: absolute;
+  height: auto;
 `;
 
 export const Text = styled.div`

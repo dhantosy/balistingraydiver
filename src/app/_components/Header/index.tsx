@@ -65,32 +65,32 @@ export default function Header() {
                   Fun Diving
                 </TextHasDropdown>
                 <Dropdown className='dropdown'>
-                  <Link href='/'>
+                  <Link href='/fun-diving/nusa-penida'>
                     <DropdownText>
                       Nusa Penida
                     </DropdownText>
                   </Link>
-                  <Link href='/'>
+                  <Link href='/fun-diving/padang-bai'>
                     <DropdownText>
                       Padang Bai
                     </DropdownText>
                   </Link>
-                  <Link href='/'>
+                  <Link href='/fun-diving/amed'>
                     <DropdownText>
                       Amed
                     </DropdownText>
                   </Link>
-                  <Link href='/'>
+                  <Link href='/fun-diving/tulamben'>
                     <DropdownText>
                       Tulamben
                     </DropdownText>
                   </Link>
-                  <Link href='/'>
+                  <Link href='/fun-diving/gili-tepekong'>
                     <DropdownText>
                       Gili Tepekong
                     </DropdownText>
                   </Link>
-                  <Link href='/'>
+                  <Link href='/fun-diving/menjangan'>
                     <DropdownText>
                       Menjangan
                     </DropdownText>

@@ -45,8 +45,8 @@ export const Schedule = styled.div`
   }
 `;
 
-export const StrongTitle = styled.div`
-  font-weight: 600;
+export const ScheduleTitle = styled.div`
+  
 `;
 
 export const ScheduleTime = styled.div`
@@ -54,12 +54,11 @@ export const ScheduleTime = styled.div`
 `;
 
 export const ScheduleWrapper = styled.div`
-  max-width: 100%;
+  max-width: 600px;
 `;
 
 export const Pricing = styled.div`
   margin-bottom: 20px;
-  flex: 1 1 25%;
 `;
 
 export const PricingTitle = styled.div`
@@ -75,7 +74,8 @@ export const PricingTag = styled.div`
 
 export const PricingWrapper = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 40px;
+  justify-content: space-between;
 `;
 
 export const PricingSection = styled.div`
@@ -95,13 +95,4 @@ export const PricingSection = styled.div`
 
 export const Space = styled.div`
   margin-bottom: 15px;
-`;
-
-export const AdditionalInfo = styled.div`
-  display: flex;
-  gap: 30px;
-
-  & > div {
-    flex: 1;
-  }
 `;

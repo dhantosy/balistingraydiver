@@ -1,7 +1,7 @@
 'use client'
 
 import { FaRegCheckCircle } from 'react-icons/fa'
-import { SubTitle, List, ListItem, Icon, Note, Schedule, ScheduleTime, StrongTitle, ScheduleWrapper, Pricing, PricingTag, PricingTitle, PricingWrapper, PricingSection, Space, AdditionalInfo } from './styles'
+import { SubTitle, List, ListItem, Icon, Note, Schedule, ScheduleTime, ScheduleTitle, ScheduleWrapper, Pricing, PricingTag, PricingTitle, PricingWrapper, PricingSection, Space } from './styles'
 
 export default function DetailInfo() {
   return (
@@ -71,32 +71,32 @@ export default function DetailInfo() {
       <ScheduleWrapper>
         <SubTitle>Departure & Return</SubTitle>
         <Schedule>
-          <div>Pickup from your hotel</div>
+          <ScheduleTitle>Pickup from your hotel</ScheduleTitle>
           <ScheduleTime>7.00 AM - 7.30 AM</ScheduleTime>
         </Schedule>
         <Schedule>
-          <div>Depart from Bali Stingray Dive Center</div>
+          <ScheduleTitle>Depart from Bali Stingray Dive Center</ScheduleTitle>
           <ScheduleTime>8.00 AM - 8.30 AM</ScheduleTime>
         </Schedule>
         <Schedule>
-          <div>Arrive in Nusa Penida</div>
+          <ScheduleTitle>Arrive in Nusa Penida</ScheduleTitle>
           <ScheduleTime>9.00 AM - 9.30 AM</ScheduleTime>
         </Schedule>
         <Schedule>
-          <div>1st and 2nd dive</div>
+          <ScheduleTitle>1st and 2nd dive</ScheduleTitle>
           <ScheduleTime>Morning Session</ScheduleTime>
         </Schedule>
         <Schedule>
-          <div>Lunch included on the speed boat</div>
+          <ScheduleTitle>Lunch included on the speed boat</ScheduleTitle>
           <ScheduleTime>Afternoon</ScheduleTime>
         </Schedule>
         <Schedule>
-          <div>3rd dive</div>
+          <ScheduleTitle>3rd dive (afternoon)</ScheduleTitle>
           <ScheduleTime>Afternoon Session</ScheduleTime>
         </Schedule>
         <Schedule>
-          <div>Return to Bali Stingray Dive Center</div>
-          <ScheduleTime>4.00 PM - 4.30 PM</ScheduleTime>
+          <ScheduleTitle>Return to Bali Stingray Dive Center</ScheduleTitle>
+          <ScheduleTime>16.00 PM - 16.30 PM</ScheduleTime>
         </Schedule>
       </ScheduleWrapper>
       <PricingSection>
@@ -116,52 +116,29 @@ export default function DetailInfo() {
           </Pricing>
         </PricingWrapper>
       </PricingSection>
-      <AdditionalInfo>
-        <div>
-          <SubTitle>Additional Services</SubTitle>
-          <Space>
-            <StrongTitle>Private Divemaster</StrongTitle>
-            <div>IDR 750.000</div>
-          </Space>
-          <Space>
-            <StrongTitle>Fullset Dive Equipment Rental</StrongTitle>
-            <div>IDR 250.000</div>
-          </Space>
-          <Space>
-            <StrongTitle>Extra Dive</StrongTitle>
-            <div>IDR 450.000</div>
-          </Space>
-          <Space>
-            <StrongTitle>Dive Computer Rental</StrongTitle>
-            <div>IDR 150.000</div>
-          </Space>
-          <Space>
-            <StrongTitle>Professional Photography</StrongTitle>
-            <div>IDR 2.500.000</div>
-          </Space>
-        </div>
-        <div>
-          <SubTitle>Additional Information</SubTitle>
-          <Space>
-            <div>INT valve scuba tanks available, DIN valve provided on demand.</div>
-          </Space>
-          <Space>
-            <div>Nitrox provided on demand, additional Rp. 50,000 per tank.</div>
-          </Space>
-          <Space>
-            <div>Dive in a small group, maximum 3 divers (Guide Ratio 3:1).</div>
-          </Space>
-          <Space>
-            <div>Dive sites will be chosen based on diver experience.</div>
-          </Space>
-          <Space>
-            <div>Emergency Oxygen and First Aid ready.</div>
-          </Space>
-          <Space>
-            <div>We speak English & Bahasa Indonesia.</div>
-          </Space>
-        </div>
-      </AdditionalInfo>
+      <div>
+        <SubTitle>Additional Services</SubTitle>
+        <Space>
+          <div>Private Divemaster</div>
+          <div>IDR 750.000</div>
+        </Space>
+        <Space>
+          <div>Fullset Dive Equipment Rental</div>
+          <div>IDR 250.000</div>
+        </Space>
+        <Space>
+          <div>Extra Dive</div>
+          <div>IDR 450.000</div>
+        </Space>
+        <Space>
+          <div>Dive Computer Rental</div>
+          <div>IDR 150.000</div>
+        </Space>
+        <Space>
+          <div>Professional Photography</div>
+          <div>IDR 2.500.000</div>
+        </Space>
+      </div>
     </div>
   )
 }

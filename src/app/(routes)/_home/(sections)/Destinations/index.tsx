@@ -2,8 +2,7 @@
 
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa'
-import Container from '@/app/_components/Container'
-import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer, BoxArrow } from './styles'
+import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer, BoxContainerOuter, BoxArrow } from './styles'
 
 const sites = [
   {
@@ -47,11 +46,11 @@ const sites = [
 export default function Destinations() {
   return (
     <Section id='fun-diving'>
-      <Container>
-        <Heading>
-          <Title>Fun Diving</Title>
-          <Subtitle>Whether you are a certified diver or a beginner, fun diving offers the opportunity to discover breathtaking marine life, vibrant coral reefs, and fascinating underwater landscapes</Subtitle>
-        </Heading>
+      <Heading>
+        <Title>Fun Diving</Title>
+        <Subtitle>Whether you are a certified diver or a beginner, fun diving offers the opportunity to discover breathtaking marine life, vibrant coral reefs, and fascinating underwater landscapes</Subtitle>
+      </Heading>
+      <BoxContainerOuter>
         <BoxContainer>
           {sites.map(({ title, subtitle, image, link }) => {
 
@@ -73,7 +72,7 @@ export default function Destinations() {
             )
           })}
         </BoxContainer>
-      </Container>
+      </BoxContainerOuter>
     </Section>
   )
 }

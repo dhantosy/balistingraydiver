@@ -4,16 +4,28 @@ import theme from '@/styles/theme'
 export const Section = styled.section`
   padding: 100px 0 60px;
   background-color: ${theme.colors.backgroundGrey};
+
+  @media screen and (max-width: 1024px) {
+    padding: 60px 0;
+  }
 `;
 
 export const Heading = styled.div`
   text-align: center;
+
+  @media screen and (max-width: 1024px) {
+    text-align: left;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 40px;
   font-weight: 700;
   margin: 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
 `;
 
 export const Name = styled.h4`

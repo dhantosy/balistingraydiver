@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import theme from '@/styles/theme';
 
 export const Wrapper = styled.div`
-  display: flex;
+  display: block;
   background-image: url('/assets/images/gallery-3.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -33,6 +33,12 @@ export const Content = styled.div`
   height: 100%;
   padding: 100px 40px;
   text-align: center;
+
+  @media screen and (max-width: 1024px) {
+    padding: 40px;
+    text-align: left;
+    align-items: flex-start;
+  }
 `;
 
 export const Info = styled.div`

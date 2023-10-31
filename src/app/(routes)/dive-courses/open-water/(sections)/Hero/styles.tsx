@@ -9,6 +9,10 @@ export const Section = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: 1024px) {
+    height: 350px;
+  }
 `;
 
 export const Content = styled.div`
@@ -20,12 +24,22 @@ export const Content = styled.div`
   justify-content: center;
   color: ${theme.colors.white};
   height: 100%;
+
+  @media screen and (max-width: 1024px) {
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 30px;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 60px;
   font-weight: 900;
   margin: 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
 `;
 
 export const Subtitle = styled.h2`
@@ -35,4 +49,9 @@ export const Subtitle = styled.h2`
   max-width: 640px;
   text-align: center;
   line-height: 1.2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    text-align: left;
+  }
 `;

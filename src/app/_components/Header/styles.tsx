@@ -10,6 +10,12 @@ export const HeaderNav = styled.header<{ $active?: boolean; }>`
   z-index: 9;
   color: ${props => props.$active ? theme.colors.blueMain : theme.colors.white};
   box-shadow: ${props => props.$active ? '0 5px 5px rgba(0,0,0,0.1)' : 'none'};
+
+  @media screen and (max-width: 980px) {
+    background-color: ${theme.colors.white};
+    color: ${theme.colors.blueMain};
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -26,11 +32,43 @@ export const Menu = styled.menu`
 
 export const MenuItem = styled.div`
   position: relative;
+
+  &.mobile {
+    display: none;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 980px) {
+
+    &.desktop {
+      display: none;
+    }
+
+    &.mobile {
+      display: block;
+    }
+  }
 `;
 
 export const Logo = styled.div<{ $active?: boolean; }>`
   display: flex;
   padding: ${props => props.$active ? '0' : '15px 0 0'};
+
+  &.mobile {
+    display: none;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 980px) {
+
+    &.desktop {
+      display: none;
+    }
+
+    &.mobile {
+      display: flex;
+    }
+  }
 `;
 
 export const Text = styled.div`
@@ -78,4 +116,39 @@ export const DropdownText = styled.div`
   &:hover {
     font-weight: 700;
   }
+`;
+
+export const Icon = styled.div`
+  width: 40px;
+  padding: 17px 0 13px 10px;
+  line-height: 1;
+`;
+
+export const MobileMenuContainer = styled.div<{ $isMobileMenuActive?: boolean; }>`
+  display: ${props => props.$isMobileMenuActive ? 'block' : 'none'};
+  position: fixed;
+  top: 62px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: ${theme.colors.white};
+  padding: 50px 20px;
+  z-index: 9;
+`;
+
+export const TextHasDropdownMobile = styled.div`
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 20px;
+`;
+
+export const IconMobileArrow = styled.div`
+  flex: 0 0 20px;
+  display: flex;
+`;
+
+export const DropdownMobile = styled.div<{ $isMobileMenuItemExpand?: boolean; }>`
+  display: ${props => props.$isMobileMenuItemExpand ? 'block' : 'none'};
 `;

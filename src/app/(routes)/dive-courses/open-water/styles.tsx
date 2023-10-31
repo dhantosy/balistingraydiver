@@ -20,6 +20,7 @@ export const Wrapper = styled.div`
 
     & {
       flex-direction: column-reverse;
+      padding: 40px 0;
     }
   }
 `;

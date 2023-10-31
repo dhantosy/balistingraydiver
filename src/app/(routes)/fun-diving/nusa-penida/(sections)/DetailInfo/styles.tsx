@@ -5,6 +5,10 @@ export const SubTitle = styled.h3`
   margin: 80px 0 25px;
   font-size: 24px;
   font-weight: 600;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 0 20px;
+  }
 `;
 
 export const List = styled.ul`
@@ -19,6 +23,11 @@ export const ListItem = styled.li`
   display: flex;
   gap: 10px;
   list-style: none;
+
+  @media screen and (max-width: 1024px) {
+    flex: 1 1 50%;
+    align-items: flex-start;
+  }
 `;
 
 export const Icon = styled.div`
@@ -30,6 +39,10 @@ export const Icon = styled.div`
 export const Note = styled.div`
   margin-top: 20px;
   font-style: italic;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const Schedule = styled.div`
@@ -42,6 +55,12 @@ export const Schedule = styled.div`
 
   &:nth-child(odd) {
     background-color: ${theme.colors.white};
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -76,6 +95,11 @@ export const PricingTag = styled.div`
 export const PricingWrapper = styled.div`
   display: flex;
   gap: 30px;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 export const PricingSection = styled.div`
@@ -85,6 +109,11 @@ export const PricingSection = styled.div`
   border-radius: 15px;
   overflow: hidden;
   color: ${theme.colors.cyan};
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
 
   & > .uppercase {
     text-transform: uppercase;
@@ -103,5 +132,9 @@ export const AdditionalInfo = styled.div`
 
   & > div {
     flex: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
   }
 `;

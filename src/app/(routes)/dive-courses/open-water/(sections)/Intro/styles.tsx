@@ -4,6 +4,10 @@ export const Title = styled.h3`
   margin: 0 0 30px;
   font-size: 40px;
   font-weight: 700;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
 `;
 
 export const SubTitle = styled.h3`
@@ -12,6 +16,10 @@ export const SubTitle = styled.h3`
   font-weight: 600;
   max-width: 600px;
   line-height: 1.3;
+
+  @media screen and (max-width: 1024px) {
+    margin: 40px 0 20px;
+  }
 `;
 
 export const List = styled.ul`

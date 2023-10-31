@@ -4,6 +4,10 @@ export const Title = styled.h3`
   margin: 0 0 30px;
   font-size: 40px;
   font-weight: 700;
+
+  @media screen and (max-width: 980px) {
+    font-size: 32px;
+  }
 `;
 
 export const SubTitle = styled.h3`
@@ -24,6 +28,10 @@ export const ListItem = styled.li`
   display: flex;
   gap: 10px;
   list-style: none;
+
+  @media screen and (max-width: 980px) {
+    flex: 1 1 40%;
+  }
 `;
 
 export const Icon = styled.div`

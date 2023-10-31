@@ -5,6 +5,10 @@ export const Section = styled.div`
   background-color: ${theme.colors.white};
   overflow: hidden;
   margin: 60px 0;
+
+  @media screen and (max-width: 980px) {
+    margin: 60px 0 40px;
+  }
 `;
 
 export const ImageWrapper = styled.div`

@@ -1,7 +1,13 @@
+/* eslint-disable react/no-children-prop */
 'use client'
 
+import React from 'react'
+import { usePathname } from 'next/navigation'
+import { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaBars } from 'react-icons/fa'
+
 import {
   Navigation,
   Text,
@@ -12,31 +18,158 @@ import {
   Dropdown,
   DropdownText,
   TextHasDropdown,
+  Icon,
+  MobileMenuContainer,
 } from './styles'
 import Container from '../Container'
-
 import { useScrollPosition}  from '@/hooks/useScrollPosition';
-import { useEffect, useState } from 'react'
+import MobileMenuItem from './MobileMenuItem'
+
+const headerMenus = [
+  {
+    parent: 'Fun Diving',
+    children: [
+      {
+        title: 'Nusa Penida',
+        link: '/fun-diving/nusa-penida'
+      },
+      {
+        title: 'Padang Bai',
+        link: '/fun-diving/padang-bai'
+      },
+      {
+        title: 'Amed',
+        link: '/fun-diving/amed'
+      },
+      {
+        title: 'Tulamben',
+        link: '/fun-diving/nusa-penida'
+      },
+      {
+        title: 'Gili Tepekong',
+        link: '/fun-diving/gili-tepekong'
+      },
+      {
+        title: 'Menjangan',
+        link: '/fun-diving/menjangan'
+      } 
+    ]
+  },
+  {
+    parent: 'Dive Courses',
+    children: [
+      {
+        title: 'Open Water',
+        link: '/dive-courses/open-water'
+      },
+      {
+        title: 'Advance Open Water',
+        link: '/dive-courses/advance-open-water'
+      },
+      {
+        title: 'Rescue Diver',
+        link: '/dive-courses/rescue-diver'
+      },
+      {
+        title: 'Divemaster',
+        link: '/dive-courses/divemaster'
+      },
+    ]
+  },
+  {
+    parent: 'Beyond Bali',
+    linkParent: '/beyond-bali'
+  }
+];
 
 export default function Header() {
+  const pathname = usePathname();
   const scrollPosition = useScrollPosition();
   const [active, setActive] = useState(false);
+  const [mobileMenuActive, setMobileMenuActive] = useState(false);
+
+  const handleMobileMenuClick = useCallback(() => {
+    setMobileMenuActive(!mobileMenuActive);
+  }, [mobileMenuActive]);
 
   useEffect(() => {
+    setMobileMenuActive(false);
+  }, [pathname])
+
+  useEffect(() => {
+
     if (active) {
       if (scrollPosition < 101) setActive(false);
     } else {
       if (scrollPosition >= 100) setActive(true);
     }
-
   }, [active, scrollPosition]);
+
+  function HeaderItemMenuDesktop() {
+    return (
+      <Menu>
+        {headerMenus.map(({ parent, children, linkParent }) => {
+
+          return (
+            <React.Fragment key={parent}>
+              <MenuItem className='desktop'>
+                <Text>
+                  {children && (
+                    <>
+                      <TextHasDropdown>{parent}</TextHasDropdown>
+                      <Dropdown className='dropdown'>
+                        {children.map(({ title, link }) => {
+                          return (
+                            <Link href={link} key={title}>
+                              <DropdownText>
+                                {title}
+                              </DropdownText>
+                            </Link>
+                          )
+                        })}
+                      </Dropdown>
+                    </>
+                  )}
+                  {linkParent && (
+                    <Link href={linkParent}>
+                      {parent}
+                    </Link>
+                  )}
+                </Text>
+              </MenuItem>
+            </React.Fragment>
+          )
+        })}
+      </Menu>
+    )
+  };
+
+  function HeaderItemMenuMobile() {
+
+    return (
+      <div>
+        {headerMenus.map(({ parent, children, linkParent }) => {
+
+          return (
+            <React.Fragment key={parent}>
+              <MobileMenuItem
+                parent={parent}
+                hasChildren={children}
+                linkParent={linkParent}
+              />
+            </React.Fragment>
+          )
+        })}
+      </div>
+    )
+  };
 
   return (
     <HeaderNav $active={active}>
       <Container>
         <Navigation>
           <Link href='/'>
-            <Logo $active={active}>
+            <Logo $active={active} className='desktop'>
               {active ? (
                 <Image
                   src="/assets/images/logo-black.png"
@@ -57,81 +190,29 @@ export default function Header() {
                 />
               )}
             </Logo>
+            <Logo className='mobile'>
+              <Image
+                src="/assets/images/logo-black.png"
+                alt="Bali Stingray Diver"
+                sizes={`100vw, 33vw`}
+                priority
+                width='50'
+                height='50'
+              />
+            </Logo>
           </Link>
           <Menu>
-            <MenuItem>
-              <Text>
-                <TextHasDropdown>
-                  Fun Diving
-                </TextHasDropdown>
-                <Dropdown className='dropdown'>
-                  <Link href='/fun-diving/nusa-penida'>
-                    <DropdownText>
-                      Nusa Penida
-                    </DropdownText>
-                  </Link>
-                  <Link href='/fun-diving/padang-bai'>
-                    <DropdownText>
-                      Padang Bai
-                    </DropdownText>
-                  </Link>
-                  <Link href='/fun-diving/amed'>
-                    <DropdownText>
-                      Amed
-                    </DropdownText>
-                  </Link>
-                  <Link href='/fun-diving/tulamben'>
-                    <DropdownText>
-                      Tulamben
-                    </DropdownText>
-                  </Link>
-                  <Link href='/fun-diving/gili-tepekong'>
-                    <DropdownText>
-                      Gili Tepekong
-                    </DropdownText>
-                  </Link>
-                  <Link href='/fun-diving/menjangan'>
-                    <DropdownText>
-                      Menjangan
-                    </DropdownText>
-                  </Link>
-                </Dropdown>
+            {HeaderItemMenuDesktop()}
+            <MenuItem className='mobile'>
+              <Text className='mobile'>
+                <Icon onClick={handleMobileMenuClick}>
+                  <FaBars />
+                </Icon>
               </Text>
             </MenuItem>
-            <MenuItem>
-              <Text>
-                <TextHasDropdown>
-                  Dive Courses
-                </TextHasDropdown>
-                <Dropdown className='dropdown'>
-                  <Link href='/dive-courses/open-water'>
-                    <DropdownText>
-                      Open Water
-                    </DropdownText>
-                  </Link>
-                  <Link href='/dive-courses/advance-open-water'>
-                    <DropdownText>
-                      Advance Open Water
-                    </DropdownText>
-                  </Link>
-                  <Link href='/dive-courses/rescue-diver'>
-                    <DropdownText>
-                      Rescue Diver
-                    </DropdownText>
-                  </Link>
-                  <Link href='/dive-courses/divemaster'>
-                    <DropdownText>
-                      Divemaster
-                    </DropdownText>
-                  </Link>
-                </Dropdown>
-              </Text>
-            </MenuItem>
-            <Text>
-              <Link href='/'>
-                Beyond Bali
-              </Link>
-            </Text>
+            <MobileMenuContainer $isMobileMenuActive={mobileMenuActive}>
+              {HeaderItemMenuMobile()}
+            </MobileMenuContainer>
           </Menu>
         </Navigation>
       </Container>

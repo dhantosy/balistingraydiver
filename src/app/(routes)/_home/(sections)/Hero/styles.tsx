@@ -5,25 +5,38 @@ export const Section = styled.section`
   position: relative;
   height: 100vh;
   overflow: hidden;
+
+  @media screen and (max-width: 1100px) {
+    height: 80vh;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: initial;
+  }
 `;
 
 export const VideoWrapper = styled.div`
-  & {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 
   &:after {
     content: '';
+    display: block;
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
     left: 0;
     top: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
   }
 `;
 
@@ -37,12 +50,26 @@ export const Content = styled.div`
   justify-content: center;
   color: ${theme.colors.white};
   margin-top: 50px;
+
+  @media screen and (max-width: 1100px) {
+    min-height: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    color: ${theme.colors.blueMain};
+    margin-top: 20px;
+    align-items: flex-start;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 60px;
   font-weight: 900;
   margin: 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
 `;
 
 export const Subtitle = styled.h2`
@@ -52,6 +79,12 @@ export const Subtitle = styled.h2`
   max-width: 640px;
   text-align: center;
   line-height: 1.2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    text-align: left;
+    margin: 20px 0 30px;
+  }
 `;
 
 export const Button = styled.button`
@@ -61,4 +94,11 @@ export const Button = styled.button`
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1024px) {
+    padding: 15px 50px;
+    font-size: 16px;
+    color: ${theme.colors.white};
+    margin-bottom: 20px;
+  }
 `;

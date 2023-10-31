@@ -1,15 +1,4 @@
 import styled from 'styled-components'
-import theme from '@/styles/theme';
-
-export const Section = styled.section`
-  position: relative;
-  height: 500px;
-  overflow: hidden;
-  background-image: url('/assets/images/nusa-penida.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-`;
 
 export const Wrapper = styled.div`
   display: flex;

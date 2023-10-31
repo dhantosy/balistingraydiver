@@ -5,10 +5,21 @@ export const Section = styled.section`
   position: relative;
   height: 500px;
   overflow: hidden;
-  background-image: url('/assets/images/nusa-penida.jpg');
+  background-image: url('/assets/images/gallery-4.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    left: 0;
+    top: 0;
+  }
 
   @media screen and (max-width: 1024px) {
     height: 350px;

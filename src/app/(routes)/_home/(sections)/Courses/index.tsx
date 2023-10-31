@@ -10,22 +10,22 @@ const sites = [
   {
     title: 'Open Water',
     subtitle: 'Beginner PADI certification that will teach you the skills to dive safely and independently anywhere in the world.',
-    link: '/',
+    link: '/dive-courses/open-water',
   },
   {
     title: 'Advanced Open Water',
     subtitle: 'Dive to 30m deep and helps build confidence to advance diving skills through various adventure dives.',
-    link: '/',
+    link: '/dive-courses/advance-open-water',
   },
   {
     title: 'Rescue Diver',
     subtitle: 'A step towards going Pro or Master Scuba Diver and become a safer buddy with the PADI Rescue diver course.',
-    link: '/',
+    link: '/dive-courses/rescue-diver',
   },
   {
     title: 'Divemaster',
     subtitle: 'Act as a certified assistant to PADI Instructors!',
-    link: '/',
+    link: '/dive-courses/divemaster',
   },
 ]
 

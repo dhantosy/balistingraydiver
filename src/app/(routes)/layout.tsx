@@ -3,6 +3,7 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 
 import type { Metadata } from 'next'
+import NextTopLoader from 'nextjs-toploader'
 import Footer from '@/app/_components/Footer'
 import Header from '@/app/_components/Header'
 import Providers from '@/providers/Providers'
@@ -32,9 +33,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${josefinSans.variable} ${openSans.variable}`} suppressHydrationWarning>
+        <NextTopLoader
+          color='#20C7CA'
+          height={5}
+        />
         <Providers>
           <Header />
-            {children}
+          {children}
           <Footer />
         </Providers>
       </body>

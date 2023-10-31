@@ -3,16 +3,28 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   padding: 100px 0;
+
+  @media screen and (max-width: 1024px) {
+    padding: 60px 0;
+  }
 `;
 
 export const Heading = styled.div`
   text-align: center;
+
+  @media screen and (max-width: 1024px) {
+    text-align: left;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 40px;
   font-weight: 700;
   margin: 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -21,6 +33,11 @@ export const Subtitle = styled.p`
   line-height: 1.4;
   max-width: 800px;
   margin: 25px auto;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    margin: 25px 0;
+  }
 `;
 
 export const BoxContainer = styled.div`
@@ -30,6 +47,11 @@ export const BoxContainer = styled.div`
   align-items: normal;
   justify-content: center;
   gap: 30px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 40px 0 0;
+    flex-direction: column;
+  }
 `;
 
 export const BoxWrapper = styled.div`
@@ -57,16 +79,19 @@ export const BoxContentTop = styled.div`
   padding: 25px;
   text-align: center;
   min-height: 300px;
+
+  @media screen and (max-width: 1024px) {
+    min-height: 250px;
+  }
 `;
 
 export const BoxTitle = styled.h4`
   font-size: 20px;
   text-transform: uppercase;
   color: ${theme.colors.blueMain};
-  margin: 0;
   line-height: 1.2;
   font-weight: 900;
-  margin: 40px 0 0;
+  margin: 30px 0 0;
 `;
 
 export const BoxSubtitle = styled.p`

@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaAngleRight, FaWater } from 'react-icons/fa'
+import { FaAngleRight } from 'react-icons/fa'
 import Container from '@/app/_components/Container'
 import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer, BoxContentTop, BoxIcon } from './styles'
 

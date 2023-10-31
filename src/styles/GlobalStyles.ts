@@ -92,7 +92,7 @@ const styles = css`
   }
 
   .swiper-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 
   .swiper-pagination-bullet-active {

@@ -3,6 +3,10 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   display: flex;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 export const Grid = styled.div`
@@ -10,10 +14,10 @@ export const Grid = styled.div`
     flex: 1;
     position: relative;
     overflow: hidden;
+    background-color: ${theme.colors.blueMain};
   }
 
   &:first-child {
-    background-color: ${theme.colors.blueMain};
     color: ${theme.colors.white};
   }
 `;
@@ -25,6 +29,12 @@ export const GridContent = styled.div`
   margin-left: auto;
   margin-right: 120px;
   padding: 60px 0 60px 20px;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 100%;
+    padding: 50px 20px 40px;
+    margin: 0;
+  }
 `;
 
 export const Title = styled.h2`
@@ -33,17 +43,25 @@ export const Title = styled.h2`
   line-height: 1.2;
   margin: 0 0 20px;
   color: ${theme.colors.cyan};
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
 `;
 
 export const VideoWrapper = styled.div`
-  & {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: 1;
-    overflow: hidden;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  background-color: ${theme.colors.blueMain};
+
+  @media screen and (max-width: 1024px) {
+    height: 280px;
+    position: static;
   }
 
   &:after {
@@ -68,6 +86,8 @@ export const Subtitle = styled.h3`
 
 export const Video = styled.video`
   width: auto;
+  position: absolute;
+  height: auto;
 `;
 
 export const Text = styled.div`
@@ -84,5 +104,12 @@ export const ImageWrapper = styled.div`
   top: 50%;
   margin-top: -160px;
   margin-left: -125px;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 150px;
+    margin-top: 0;
+    top: 40px;
+    margin-left: -75px;
+  }
 `;
 

@@ -43,7 +43,7 @@ const headerMenus = [
       },
       {
         title: 'Tulamben',
-        link: '/fun-diving/nusa-penida'
+        link: '/fun-diving/tulamben'
       },
       {
         title: 'Gili Tepekong',

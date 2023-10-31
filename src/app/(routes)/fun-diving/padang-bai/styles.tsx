@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import theme from '@/styles/theme';
 
 export const Section = styled.section`
   position: relative;
@@ -15,14 +14,28 @@ export const Wrapper = styled.div`
   display: flex;
   gap: 60px;
   padding: 80px 0;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 40px;
+  }
 `;
 
 export const WrapperLeft = styled.div`
   width: calc(67% - 30px);
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const WrapperRight = styled.div`
   width: calc(33% - 30px);
+  
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const Widget = styled.div`

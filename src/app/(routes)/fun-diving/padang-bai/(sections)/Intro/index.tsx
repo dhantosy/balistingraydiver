@@ -7,48 +7,44 @@ export default function Intro() {
   return (
     <div>
       <div>
-        <Title>Diving in Nusa Penida</Title>
-        <p>Nusa Penida offers vibrant corals and unique marine life Exhilarating drift sites Nusa Penida diving trip is a favourite for experienced divers.</p>
-        <p>It’s the only dive site in Bali where you can regularly see Manta all year round and Oceanic Sunfish (Mola) – mainly between July and October. Bali’s home to many reef fish including white tip reef sharks, eagle rays and blue-spotted stingrays, lionfish, octopus, moray eels, scorpionfish, and turtles.</p>
+        <Title>Diving in Padang Bai</Title>
+        <p>Padang Bai offers colourful and diverse marine life Perfect for snorkelling. Padang Bai diving trip is ideal for macro photography.</p>
+        <p>The marine life is abundant and healthy here. Cuttlefish, leaf scorpionfish, Crocodile fish, Oriental sweetlips, Moray eels, many Clownfish, and anemone fish can be seen during a Padang Bai diving. Chances of seeing sharks & turtles too!</p>
       </div>
       <div>
-        <SubTitle>Nusa Penida Dive Sites</SubTitle>
+        <SubTitle>Padang Bai Dive Sites</SubTitle>
         <List>
           <ListItem>
             <Icon>
               <FaMapMarkerAlt />
             </Icon>
-            Manta point
+            Blue Lagoon
           </ListItem>
           <ListItem>
             <Icon>
               <FaMapMarkerAlt />
             </Icon>
-            Crystal bay
+            Jepun
           </ListItem>
           <ListItem>
             <Icon>
               <FaMapMarkerAlt />
             </Icon>
-            Blue corner
+            Bias Tugel
           </ListItem>
           <ListItem>
             <Icon>
               <FaMapMarkerAlt />
             </Icon>
-            Gamat Bay
+            Ferry Channel
           </ListItem>
           <ListItem>
             <Icon>
               <FaMapMarkerAlt />
             </Icon>
-            Toyopakeh
+            Turtle Neck
           </ListItem>
           <ListItem>
-            <Icon>
-              <FaMapMarkerAlt />
-            </Icon>
-            Mangrove
           </ListItem>
         </List>
       </div>

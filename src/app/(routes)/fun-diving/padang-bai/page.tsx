@@ -10,7 +10,7 @@ import DetailInfo from './(sections)/DetailInfo'
 
 import { Wrapper, WrapperLeft, WrapperRight, Widget } from './styles'
 
-export default function Padangbai() {
+export default function PadangBai() {
   return (
     <>
       <Hero />

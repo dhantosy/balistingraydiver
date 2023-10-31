@@ -79,11 +79,11 @@ export default function DetailInfo() {
           <ScheduleTime>8.00 AM - 8.30 AM</ScheduleTime>
         </Schedule>
         <Schedule>
-          <div>Arrive in Padang Bai</div>
-          <ScheduleTime>9.00 AM - 9.30 AM</ScheduleTime>
+          <div>Arrive in Menjangan</div>
+          <ScheduleTime>10.00 AM - 10.30 AM</ScheduleTime>
         </Schedule>
         <Schedule>
-          <div>1st and 2nd dive</div>
+          <div>1st & 2nd dive</div>
           <ScheduleTime>Morning Session</ScheduleTime>
         </Schedule>
         <Schedule>
@@ -96,7 +96,7 @@ export default function DetailInfo() {
         </Schedule>
         <Schedule>
           <div>Return to Bali Stingray Dive Center</div>
-          <ScheduleTime>4.00 PM - 4.30 PM</ScheduleTime>
+          <ScheduleTime>5.00 PM - 6.00 PM</ScheduleTime>
         </Schedule>
       </ScheduleWrapper>
       <PricingSection>
@@ -104,15 +104,15 @@ export default function DetailInfo() {
         <PricingWrapper>
           <Pricing>
             <PricingTitle>Certified Diver</PricingTitle>
-            <PricingTag>IDR 1.750.000</PricingTag>
+            <PricingTag>IDR 3.200.000</PricingTag>
           </Pricing>
           <Pricing>
             <PricingTitle>Discover Scuba Diving</PricingTitle>
-            <PricingTag>IDR 2.300.000</PricingTag>
+            <PricingTag>IDR 3.650.000</PricingTag>
           </Pricing>
           <Pricing>
             <PricingTitle>Snorkeling</PricingTitle>
-            <PricingTag>IDR 900.000</PricingTag>
+            <PricingTag>IDR 1.500.000</PricingTag>
           </Pricing>
         </PricingWrapper>
       </PricingSection>

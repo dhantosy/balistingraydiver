@@ -37,7 +37,7 @@ const sites = [
   },
   {
     title: 'Menjangan',
-    subtitle: 'We can see  Turtles, Fire Dartfish, Red-Toothed Triggerfish, Wall diving, Nudibranchs, Orangutan Crabs Bat fish, Blue dogtooth tuna, Tip Reef in Menjangan',
+    subtitle: 'The home  Turtles, Fire Dartfish, Red-Toothed Triggerfish, Wall diving, Nudibranchs, Orangutan Crabs Bat fish, Blue dogtooth tuna, and Tip Reef in Menjangan',
     image: '/assets/images/gallery-4.jpg',
     link: '/',
   },

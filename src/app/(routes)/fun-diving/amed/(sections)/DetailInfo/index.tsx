@@ -79,7 +79,7 @@ export default function DetailInfo() {
           <ScheduleTime>8.00 AM - 8.30 AM</ScheduleTime>
         </Schedule>
         <Schedule>
-          <div>Arrive in Nusa Penida</div>
+          <div>Arrive in Amed</div>
           <ScheduleTime>10.00 AM - 10.30 AM</ScheduleTime>
         </Schedule>
         <Schedule>

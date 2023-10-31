@@ -15,12 +15,14 @@ import {
   TextHasDropdownMobile,
 } from './styles'
 
+interface Child {
+  title?: string;
+  link?: string;
+}
+
 type Props = {
   parent: string;
-  hasChildren?: [{
-    title?: string;
-    link?: string;
-  }],
+  hasChildren?: Child[],
   linkParent?: string;
 };
 

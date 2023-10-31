@@ -11,7 +11,7 @@ export const HeaderNav = styled.header<{ $active?: boolean; }>`
   color: ${props => props.$active ? theme.colors.blueMain : theme.colors.white};
   box-shadow: ${props => props.$active ? '0 5px 5px rgba(0,0,0,0.1)' : 'none'};
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     background-color: ${theme.colors.white};
     color: ${theme.colors.blueMain};
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -38,7 +38,7 @@ export const MenuItem = styled.div`
     cursor: pointer;
   }
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
 
     &.desktop {
       display: none;
@@ -59,7 +59,7 @@ export const Logo = styled.div<{ $active?: boolean; }>`
     padding: 0;
   }
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
 
     &.desktop {
       display: none;

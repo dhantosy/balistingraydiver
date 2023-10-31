@@ -4,10 +4,11 @@ import 'swiper/css/pagination';
 
 import type { Metadata } from 'next'
 import NextTopLoader from 'nextjs-toploader'
+import { Josefin_Sans, Open_Sans } from 'next/font/google'
 import Footer from '@/app/_components/Footer'
 import Header from '@/app/_components/Header'
+import WhatsappWidget from '@/app//_components/WhatsappWidget'
 import Providers from '@/providers/Providers'
-import { Josefin_Sans, Open_Sans } from 'next/font/google'
 
 const josefinSans = Josefin_Sans({
   subsets: ['latin'],
@@ -41,6 +42,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <WhatsappWidget />
         </Providers>
       </body>
     </html>

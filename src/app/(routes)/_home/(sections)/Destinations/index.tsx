@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa'
-import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer, BoxContainerOuter, BoxArrow } from './styles'
+import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer, BoxContainerOuter, BoxArrow, Anchor } from './styles'
 
 const sites = [
   {
@@ -37,7 +37,7 @@ const sites = [
   },
   {
     title: 'Menjangan',
-    subtitle: 'We can see  Turtles, Fire Dartfish, Red-Toothed Triggerfish, Wall diving, Nudibranchs, Orangutan Crabs Bat fish, Blue dogtooth tuna, Tip Reef in Menjangan',
+    subtitle: 'The home  Turtles, Fire Dartfish, Red-Toothed Triggerfish, Wall diving, Nudibranchs, Orangutan Crabs Bat fish, Blue dogtooth tuna, and Tip Reef in Menjangan',
     image: '/assets/images/gallery-4.jpg',
     link: '/',
   },
@@ -45,7 +45,8 @@ const sites = [
 
 export default function Destinations() {
   return (
-    <Section id='fun-diving'>
+    <Section>
+      <Anchor id='fun-diving' />
       <Heading>
         <Title>Fun Diving</Title>
         <Subtitle>Whether you are a certified diver or a beginner, fun diving offers the opportunity to discover breathtaking marine life, vibrant coral reefs, and fascinating underwater landscapes</Subtitle>

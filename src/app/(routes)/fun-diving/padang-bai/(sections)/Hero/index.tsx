@@ -8,8 +8,8 @@ export default function Hero() {
     <Section id='banner'>
       <Container>
         <Content>
-          <Title>Nusa Penida</Title>
-          <Subtitle>Explore Nusa Penida with Bali Stingray Divers</Subtitle>
+          <Title>Padang Bai</Title>
+          <Subtitle>Explore Padang Bai with Bali Stingray Divers</Subtitle>
         </Content>
       </Container>
     </Section>

@@ -36,7 +36,11 @@ export const VideoWrapper = styled.div`
   @media screen and (max-width: 1024px) {
     position: relative;
     display: flex;
-    margin-top: 50px;
+    margin-top: 60px;
+
+    &:after {
+      display: none;
+    }
   }
 `;
 

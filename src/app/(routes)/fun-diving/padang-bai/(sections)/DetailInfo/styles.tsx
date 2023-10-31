@@ -5,6 +5,10 @@ export const SubTitle = styled.h3`
   margin: 80px 0 25px;
   font-size: 24px;
   font-weight: 600;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 0 20px;
+  }
 `;
 
 export const List = styled.ul`
@@ -19,17 +23,26 @@ export const ListItem = styled.li`
   display: flex;
   gap: 10px;
   list-style: none;
+
+  @media screen and (max-width: 1024px) {
+    flex: 1 1 50%;
+    align-items: flex-start;
+  }
 `;
 
 export const Icon = styled.div`
   width: 15px;
   position: relative;
-  color: green;
+  color: ${theme.colors.green};
 `;
 
 export const Note = styled.div`
   margin-top: 20px;
   font-style: italic;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const Schedule = styled.div`
@@ -43,10 +56,16 @@ export const Schedule = styled.div`
   &:nth-child(odd) {
     background-color: ${theme.colors.white};
   }
+
+  @media screen and (max-width: 1024px) {
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
-export const ScheduleTitle = styled.div`
-  
+export const StrongTitle = styled.div`
+  font-weight: 600;
 `;
 
 export const ScheduleTime = styled.div`
@@ -54,11 +73,12 @@ export const ScheduleTime = styled.div`
 `;
 
 export const ScheduleWrapper = styled.div`
-  max-width: 600px;
+  max-width: 100%;
 `;
 
 export const Pricing = styled.div`
   margin-bottom: 20px;
+  flex: 1 1 25%;
 `;
 
 export const PricingTitle = styled.div`
@@ -74,8 +94,12 @@ export const PricingTag = styled.div`
 
 export const PricingWrapper = styled.div`
   display: flex;
-  gap: 40px;
-  justify-content: space-between;
+  gap: 30px;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 export const PricingSection = styled.div`
@@ -86,6 +110,11 @@ export const PricingSection = styled.div`
   overflow: hidden;
   color: ${theme.colors.cyan};
 
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
   & > .uppercase {
     text-transform: uppercase;
     font-weight: 600;
@@ -95,4 +124,17 @@ export const PricingSection = styled.div`
 
 export const Space = styled.div`
   margin-bottom: 15px;
+`;
+
+export const AdditionalInfo = styled.div`
+  display: flex;
+  gap: 30px;
+
+  & > div {
+    flex: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;

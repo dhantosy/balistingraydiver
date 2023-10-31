@@ -32,6 +32,8 @@ export default function About() {
             loop
             muted
             poster='/assets/images/video-dive-poster.jpg'
+            webkit-playsinline
+            playsInline
           >
             <source
               src='/assets/images/video-dive.mp4'

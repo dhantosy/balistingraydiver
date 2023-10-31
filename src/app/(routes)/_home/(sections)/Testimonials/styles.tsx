@@ -6,7 +6,7 @@ export const Section = styled.section`
   background-color: ${theme.colors.backgroundGrey};
 
   @media screen and (max-width: 1024px) {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 `;
 

@@ -11,6 +11,8 @@ export default function Hero() {
           autoPlay
           loop
           muted
+          webkit-playsinline
+          playsInline
           poster='/assets/images/video-dive-poster.jpg'
         >
           <source
@@ -22,9 +24,21 @@ export default function Hero() {
         <Content>
           <Title>Discover The Underwater World</Title>
           <Subtitle>Unleash your inner adventurer, dive into the world of underwater exploration with Bali Stingray Divers</Subtitle>
-          <Button>Let`s Dive</Button>
+          <a href='#fun-diving'>
+            <Button>
+              Let`s Dive
+            </Button>
+          </a>
         </Content>
       </Container>
+
+      <style jsx global>
+        {`
+          html {
+            scroll-behavior: smooth;
+          }
+        `}
+      </style>
     </Section>
   )
 }

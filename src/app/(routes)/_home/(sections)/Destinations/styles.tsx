@@ -10,7 +10,7 @@ export const Section = styled.section`
   margin: auto;
 
   @media screen and (max-width: 1024px) {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 `;
 
@@ -128,5 +128,10 @@ export const BoxMore = styled.div`
 
 export const BoxArrow = styled.div`
   width: 12px;
+`;
+
+export const Anchor = styled.div`
+  position: relative;
+  top: -90px;
 `;
 

@@ -47,7 +47,7 @@ export default function Testimonials() {
               1: {
                 slidesPerView: 1,
               },
-              980: {
+              1024: {
                 slidesPerView: 2,
               },
             }}

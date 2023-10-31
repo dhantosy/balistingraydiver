@@ -1,7 +1,7 @@
 'use client'
 
+import Link from 'next/link';
 import { FaClock, FaMapMarkerAlt, FaSwimmer, FaArrowsAltV, FaTag, FaAngleRight } from 'react-icons/fa'
-
 import { Wrapper, Content, ContentTop, Info, InfoIcon, Title, BoxIcon, BoxMore } from './styles';
 
 type Props = {
@@ -51,7 +51,11 @@ export default function PriceWidget({ title, price, duration, location, sessions
               </Info>
             )}
           </ContentTop>
-          <a href="">
+          <Link
+            href='https://api.whatsapp.com/send/?phone=6281246529722'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <BoxMore>
               <div>
                 Make Enquiry
@@ -60,7 +64,7 @@ export default function PriceWidget({ title, price, duration, location, sessions
                 <FaAngleRight />
               </BoxIcon>
             </BoxMore>
-          </a>
+          </Link>
         </div>
       </Content>
     </Wrapper>

@@ -1,3 +1,4 @@
+import theme from '@/styles/theme';
 import styled from 'styled-components'
 
 export const Title = styled.h3`
@@ -41,6 +42,6 @@ export const ListItem = styled.li`
 export const Icon = styled.div`
   width: 15px;
   position: relative;
-  color: green;
+  color: ${theme.colors.green};
   flex: 0 0 15px;
 `;

@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   gap: 60px;
   padding: 80px 0;
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     padding: 40px 0;
     gap: 40px;
@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
 export const WrapperLeft = styled.div`
   width: calc(67% - 30px);
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     width: 100%;
   }
 `;
@@ -33,7 +33,7 @@ export const WrapperLeft = styled.div`
 export const WrapperRight = styled.div`
   width: calc(33% - 30px);
   
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     width: 100%;
   }
 `;

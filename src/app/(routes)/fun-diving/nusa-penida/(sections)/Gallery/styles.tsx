@@ -6,7 +6,7 @@ export const Section = styled.div`
   overflow: hidden;
   margin: 60px 0;
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     margin: 60px 0 40px;
   }
 `;

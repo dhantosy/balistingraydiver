@@ -33,7 +33,7 @@ export const ListItem = styled.li`
 export const Icon = styled.div`
   width: 15px;
   position: relative;
-  color: green;
+  color: ${theme.colors.green};
 `;
 
 export const Note = styled.div`

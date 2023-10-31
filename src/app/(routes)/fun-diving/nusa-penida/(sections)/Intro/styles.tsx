@@ -5,7 +5,7 @@ export const Title = styled.h3`
   font-size: 40px;
   font-weight: 700;
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     font-size: 32px;
   }
 `;
@@ -14,6 +14,10 @@ export const SubTitle = styled.h3`
   margin: 60px 0 25px;
   font-size: 24px;
   font-weight: 600;
+
+  @media screen and (max-width: 1024px) {
+    margin: 40px 0 25px;
+  }
 `;
 
 export const List = styled.ul`
@@ -29,7 +33,7 @@ export const ListItem = styled.li`
   gap: 10px;
   list-style: none;
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     flex: 1 1 40%;
   }
 `;

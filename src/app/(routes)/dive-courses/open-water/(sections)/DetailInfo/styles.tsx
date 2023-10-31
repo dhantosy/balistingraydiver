@@ -7,6 +7,10 @@ export const SubTitle = styled.h3`
   font-weight: 600;
   max-width: 650px;
   line-height: 1.3;
+
+  @media only screen and (max-width: 1024px) {
+    margin: 40px 0 20px;
+  }
 `;
 
 export const List = styled.ul`
@@ -35,7 +39,7 @@ export const ListItem = styled.li`
 export const Icon = styled.div`
   width: 15px;
   position: relative;
-  color: green;
+  color: ${theme.colors.green};
   flex: 0 0 15px;
 `;
 

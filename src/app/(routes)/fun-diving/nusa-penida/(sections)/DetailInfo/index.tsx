@@ -1,6 +1,6 @@
 'use client'
 
-import { FaRegCheckCircle } from 'react-icons/fa'
+import { FaCheckCircle } from 'react-icons/fa'
 import { SubTitle, List, ListItem, Icon, Note, Schedule, ScheduleTime, StrongTitle, ScheduleWrapper, Pricing, PricingTag, PricingTitle, PricingWrapper, PricingSection, Space, AdditionalInfo } from './styles'
 
 export default function DetailInfo() {
@@ -11,55 +11,55 @@ export default function DetailInfo() {
         <List>
           <ListItem>
             <Icon>
-              <FaRegCheckCircle />
+              <FaCheckCircle />
             </Icon>
             2X Dives
           </ListItem>
           <ListItem>
             <Icon>
-              <FaRegCheckCircle />
+              <FaCheckCircle />
             </Icon>
             Hotel Transfer
           </ListItem>
           <ListItem>
             <Icon>
-              <FaRegCheckCircle />
+              <FaCheckCircle />
             </Icon>
             Lunch and Drinks
           </ListItem>
           <ListItem>
             <Icon>
-              <FaRegCheckCircle />
+              <FaCheckCircle />
             </Icon>
             Ticket and Porter
           </ListItem>
           <ListItem>
             <Icon>
-              <FaRegCheckCircle />
+              <FaCheckCircle />
             </Icon>
             Certified Instructor
           </ListItem>
           <ListItem>
             <Icon>
-              <FaRegCheckCircle />
+              <FaCheckCircle />
             </Icon>
             Oxygen Tanks
           </ListItem>
           <ListItem>
             <Icon>
-              <FaRegCheckCircle />
+              <FaCheckCircle />
             </Icon>
             Weight Belt
           </ListItem>
           <ListItem>
             <Icon>
-              <FaRegCheckCircle />
+              <FaCheckCircle />
             </Icon>
             Speed Boat
           </ListItem>
           <ListItem>
             <Icon>
-              <FaRegCheckCircle />
+              <FaCheckCircle />
             </Icon>
             Snorkelling Set
           </ListItem>

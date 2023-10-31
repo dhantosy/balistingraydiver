@@ -104,22 +104,22 @@ export default function Header() {
                   Dive Courses
                 </TextHasDropdown>
                 <Dropdown className='dropdown'>
-                  <Link href='/'>
+                  <Link href='/dive-courses/open-water'>
                     <DropdownText>
                       Open Water
                     </DropdownText>
                   </Link>
-                  <Link href='/'>
+                  <Link href='/dive-courses/advance-open-water'>
                     <DropdownText>
                       Advance Open Water
                     </DropdownText>
                   </Link>
-                  <Link href='/'>
+                  <Link href='/dive-courses/rescue-diver'>
                     <DropdownText>
                       Rescue Diver
                     </DropdownText>
                   </Link>
-                  <Link href='/'>
+                  <Link href='/dive-courses/divemaster'>
                     <DropdownText>
                       Divemaster
                     </DropdownText>
@@ -131,9 +131,6 @@ export default function Header() {
               <Link href='/'>
                 Beyond Bali
               </Link>
-            </Text>
-            <Text>
-              Contact Us
             </Text>
           </Menu>
         </Navigation>

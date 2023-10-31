@@ -10,7 +10,6 @@ export const HeaderNav = styled.header<{ $active?: boolean; }>`
   z-index: 9;
   color: ${props => props.$active ? theme.colors.blueMain : theme.colors.white};
   box-shadow: ${props => props.$active ? '0 5px 5px rgba(0,0,0,0.1)' : 'none'};
-  transition: all 0.1s ease-out;
 `;
 
 export const Navigation = styled.nav`

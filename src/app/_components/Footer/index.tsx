@@ -49,27 +49,27 @@ const menu = [
     children: [
       {
         menuTitle: 'Nusa Penida',
-        link: '/',
+        link: '/fun-diving/nusa-penida',
       },
       {
         menuTitle: 'Padang Bai',
-        link: '/',
+        link: '/fun-diving/padang-bai',
       },
       {
         menuTitle: 'Amed',
-        link: '/',
+        link: '/fun-diving/amed',
       },
       {
         menuTitle: 'Tulamben',
-        link: '/',
+        link: '/fun-diving/tulamben',
       },
       {
         menuTitle: 'Gili Tepekong',
-        link: '/',
+        link: '/fun-diving/gili-tepekong',
       },
       {
         menuTitle: 'Menjangan',
-        link: '/',
+        link: '/fun-diving/menjangan',
       },
     ]
   },
@@ -78,19 +78,19 @@ const menu = [
     children: [
       {
         menuTitle: 'Open Water',
-        link: '/',
+        link: '/dive-courses/open-water',
       },
       {
         menuTitle: 'Advance Open Water',
-        link: '/',
+        link: '/dive-courses/advance-open-water',
       },
       {
         menuTitle: 'Rescue Diver',
-        link: '/',
+        link: '/dive-courses/rescue-diver',
       },
       {
         menuTitle: 'Divemaster',
-        link: '/',
+        link: '/dive-courses/divemaster',
       },
     ]
   },

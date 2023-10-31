@@ -9,37 +9,37 @@ const sites = [
     title: 'Nusa Penida',
     subtitle: 'Vibrant corals and unique marine life Exhilarating drift sites Nusa Penida diving trip is a favourite for experienced divers.',
     image: '/assets/images/nusa-penida.jpg',
-    link: '/',
+    link: '/fun-diving/nusa-penida',
   },
   {
     title: 'Padang Bai',
     subtitle: 'Colourful and diverse marine life Perfect for snorkelling Padang Bai diving trip is ideal for macro photography.',
     image: '/assets/images/gallery-2.jpg',
-    link: '/',
+    link: '/fun-diving/padang-bai',
   },
   {
     title: 'Amed',
     subtitle: 'Amed diving trip is a hidden gem in the North East of Bali Combination of natural and artificial reefs is Perfect for photography.',
     image: '/assets/images/gallery-3.jpg',
-    link: '/',
+    link: '/fun-diving/amed',
   },
   {
     title: 'Tulamben',
     subtitle: 'USAT Liberty Shipwreck (1942) Colourful and diverse marine life Tulamben diving is an excellent site for Beginners to Expert.',
     image: '/assets/images/gallery-6.jpg',
-    link: '/',
+    link: '/fun-diving/tulamben',
   },
   {
     title: 'Gili Tepekong',
     subtitle: 'Gili Tepekong & Mimpang diving trip is suitable for experienced divers. The abundance of marine life Shark encounters',
     image: '/assets/images/gallery-1.jpg',
-    link: '/',
+    link: '/fun-diving/gili-tepekong',
   },
   {
     title: 'Menjangan',
     subtitle: 'The home  Turtles, Fire Dartfish, Red-Toothed Triggerfish, Wall diving, Nudibranchs, Orangutan Crabs Bat fish, Blue dogtooth tuna, and Tip Reef in Menjangan',
     image: '/assets/images/gallery-4.jpg',
-    link: '/',
+    link: '/fun-diving/menjangan',
   },
 ]
 

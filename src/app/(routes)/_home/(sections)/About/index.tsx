@@ -20,8 +20,8 @@ export default function About() {
         <VideoWrapper>
           <ImageWrapper>
             <Image
-              src="/assets/images/padi-authorized.jpg"
-              alt="Bali Stingray Diver"
+              src='/assets/images/padi-authorized.jpg'
+              alt='Bali Stingray Diver'
               sizes={`100vw, 33vw`}
               width='250'
               height='75'

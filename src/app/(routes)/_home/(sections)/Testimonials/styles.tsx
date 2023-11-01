@@ -28,7 +28,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const Name = styled.h4`
+export const Name = styled.h3`
   font-size: 24px;
   font-weight: 500;
   margin: 0;

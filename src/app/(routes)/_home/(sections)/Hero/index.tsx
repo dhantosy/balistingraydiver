@@ -13,7 +13,7 @@ export default function Hero() {
           muted
           webkit-playsinline='true'
           playsInline
-          poster='/assets/images/video-dive-poster.jpg'
+          poster='/assets/images/video-dive-poster.webp'
         >
           <source
             src='/assets/images/video-dive.mp4'

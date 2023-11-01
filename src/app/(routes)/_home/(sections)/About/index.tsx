@@ -24,7 +24,7 @@ export default function About() {
               alt='Bali Stingray Diver'
               sizes={`100vw, 33vw`}
               width='250'
-              height='75'
+              height='320'
             />
           </ImageWrapper>
           <Video
@@ -32,7 +32,7 @@ export default function About() {
             loop
             muted
             poster='/assets/images/video-dive-poster.jpg'
-            webkit-playsinline
+            webkit-playsinline='true'
             playsInline
           >
             <source

@@ -11,7 +11,7 @@ export default function Hero() {
           autoPlay
           loop
           muted
-          webkit-playsinline
+          webkit-playsinline='true'
           playsInline
           poster='/assets/images/video-dive-poster.jpg'
         >

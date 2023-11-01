@@ -17,6 +17,7 @@ export default function Hero() {
         >
           <source
             src='/assets/images/video-dive.mp4'
+            type='video/mp4'
           />
         </video>
       </VideoWrapper>

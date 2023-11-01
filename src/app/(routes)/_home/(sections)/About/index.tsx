@@ -18,6 +18,14 @@ export default function About() {
       </Grid>
       <Grid>
         <VideoWrapper>
+          <Image
+            src='/assets/images/video-dive-poster.jpg'
+            alt='Bali Stingray Divers'
+            sizes={`100vw, 33vw`}
+            fill
+            style={{ objectFit: 'cover' }}
+            className='image'
+          />
           <ImageWrapper>
             <Image
               src='/assets/images/padi-authorized.jpg'
@@ -27,18 +35,6 @@ export default function About() {
               height='320'
             />
           </ImageWrapper>
-          <Video
-            autoPlay
-            loop
-            muted
-            poster='/assets/images/video-dive-poster.jpg'
-            webkit-playsinline='true'
-            playsInline
-          >
-            <source
-              src='/assets/images/video-dive.mp4'
-            />
-          </Video>
         </VideoWrapper>
       </Grid>
     </Section>

@@ -21,6 +21,7 @@ export const VideoWrapper = styled.div`
   left: 0;
   width: 100%;
   z-index: 1;
+  background-color: ${theme.colors.blueMain};
 
   &:after {
     content: '';

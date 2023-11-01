@@ -106,7 +106,7 @@ export default function Footer() {
             <a href='https://www.instagram.com/balistingray/' target='_blank'>
               <GalleryHeadingSocial>
                 <h4>More on Instagram</h4>
-                <GalleryHeadingSocialArrow>
+                <GalleryHeadingSocialArrow className='arrow'>
                   <FaArrowRight />
                 </GalleryHeadingSocialArrow>
               </GalleryHeadingSocial>

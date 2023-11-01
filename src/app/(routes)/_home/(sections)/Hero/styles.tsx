@@ -99,6 +99,11 @@ export const Button = styled.button`
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: ${theme.colors.cyanHover};
+  }
 
   @media screen and (max-width: 1024px) {
     padding: 15px 50px;

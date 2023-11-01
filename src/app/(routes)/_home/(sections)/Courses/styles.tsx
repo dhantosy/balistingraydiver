@@ -60,6 +60,12 @@ export const BoxWrapper = styled.div`
   background-color: #f2f2f4;
   border-radius: 10px;
   overflow: hidden;
+  top: 0px;
+  transition: top 0.2s ease-in-out;
+
+  &:hover {
+    top: -5px;
+  }
 `;
 
 export const BoxContent = styled.div`

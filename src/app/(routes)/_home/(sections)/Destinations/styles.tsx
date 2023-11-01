@@ -102,8 +102,20 @@ export const BoxContent = styled.div`
     z-index: 2;
   }
 
+  &:hover {
+    & > .image {
+      transform: scale(1.1);
+    }
+
+    & .arrow {
+      left: 5px;
+    }
+  }
+
   & > .image {
     z-index: 1;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
   }
 
   & > .desc {
@@ -146,6 +158,9 @@ export const BoxMore = styled.div`
 
 export const BoxArrow = styled.div`
   width: 12px;
+  position: relative;
+  left: 0;
+  transition: left 0.2s ease-in-out;
 `;
 
 export const Anchor = styled.div`

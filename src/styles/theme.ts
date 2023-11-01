@@ -9,7 +9,8 @@ const theme = {
     blueSecondary: '#635C81',
     cyan: '#20C7CA',
     yellow: '#F4B500',
-    green: '#21AF56'
+    green: '#21AF56',
+    cyanHover: '#14E3E6'
   },
 };
 

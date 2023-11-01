@@ -66,10 +66,19 @@ export const GalleryHeadingSocial = styled.div`
   font-size: 18px;
   font-weight: 600;
   color: ${theme.colors.cyan};
+
+  &:hover {
+    & > .arrow {
+      left: 5px;
+    }
+  }
 `;
 
 export const GalleryHeadingSocialArrow = styled.div`
   width: 12px;
+  position: relative;
+  left: 0px;
+  transition: left 0.2s ease-in-out;
 `;
 
 export const GalleryContent = styled.div`
@@ -143,6 +152,11 @@ export const MenuItem = styled.div`
   margin-bottom: 10px;
   font-weight: 400;
   opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const MenuTitle = styled.div`

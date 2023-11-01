@@ -73,7 +73,7 @@ export default function Destinations() {
                       <BoxSubtitle>{subtitle}</BoxSubtitle>
                       <BoxMore>
                         Read More
-                        <BoxArrow>
+                        <BoxArrow className='arrow'>
                           <FaArrowRight />
                         </BoxArrow>
                       </BoxMore>

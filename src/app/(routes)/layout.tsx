@@ -33,13 +33,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <head>
-        <link
-          rel='preload'
-          href='/assets/images/video-dive.mp4'
-          as='fetch'
-        />
-      </head>
       <body className={`${josefinSans.variable} ${openSans.variable}`} suppressHydrationWarning>
         <NextTopLoader
           color='#20C7CA'

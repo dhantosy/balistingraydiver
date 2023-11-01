@@ -135,10 +135,9 @@ export default function Footer() {
             <Link href='/'>
               <Logo>
                 <Image
-                  src="/assets/images/logo-white.png"
-                  alt="Bali Stingray Diver"
+                  src='/assets/images/logo-white.png'
+                  alt='Bali Stingray Diver'
                   sizes={`100vw, 33vw`}
-                  priority
                   width='150'
                   height='150'
                 />
@@ -182,12 +181,12 @@ export default function Footer() {
         </Navigation>
         <Copyright>
           <CopyrightSocial>
-            <a href='https://www.instagram.com/balistingray/' target='_blank'>
+            <a href='https://www.instagram.com/balistingray/' target='_blank' aria-label='Bali Stingray Divers Instagram'>
               <CopyrightSocialItem>
                 <FaInstagram />
               </CopyrightSocialItem>
             </a>
-            <a href='https://www.facebook.com/stingraydiversbali' target='_blank'>
+            <a href='https://www.facebook.com/stingraydiversbali' target='_blank' aria-label='Bali Stingray Divers Facebook'>
               <CopyrightSocialItem>
                 <FaFacebookSquare />
               </CopyrightSocialItem>

@@ -49,7 +49,6 @@ export default function Courses() {
                         src="/assets/images/padi-logo.png"
                         alt="Bali Stingray Diver"
                         sizes={`100vw, 33vw`}
-                        priority
                         width='75'
                         height='75'
                       />

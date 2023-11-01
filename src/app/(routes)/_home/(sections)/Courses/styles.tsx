@@ -85,7 +85,7 @@ export const BoxContentTop = styled.div`
   }
 `;
 
-export const BoxTitle = styled.h4`
+export const BoxTitle = styled.h3`
   font-size: 20px;
   text-transform: uppercase;
   color: ${theme.colors.blueMain};

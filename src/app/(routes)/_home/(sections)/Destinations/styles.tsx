@@ -94,7 +94,7 @@ export const BoxContent = styled.div`
   justify-content: end;
 `;
 
-export const BoxTitle = styled.h4`
+export const BoxTitle = styled.h3`
   font-size: 24px;
   text-transform: uppercase;
   color: ${theme.colors.white};

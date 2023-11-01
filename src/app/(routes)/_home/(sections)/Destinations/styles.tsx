@@ -71,9 +71,6 @@ export const BoxWrapper = styled.div`
   flex: 1 1 30%;
   position: relative;
   height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 10px;
   overflow: hidden;
 
@@ -87,11 +84,32 @@ export const BoxContent = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.4);
+  background-color: ${theme.colors.blueMain};
   padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: end;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  & > .image {
+    z-index: 1;
+  }
+
+  & > .desc {
+    position: relative;
+    z-index: 3;
+  }
 `;
 
 export const BoxTitle = styled.h3`

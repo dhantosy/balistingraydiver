@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaArrowRight } from 'react-icons/fa'
 import { Section, Title, Subtitle, Heading, BoxTitle, BoxSubtitle, BoxMore, BoxContent, BoxWrapper, BoxContainer, BoxContainerOuter, BoxArrow, Anchor } from './styles'
 
@@ -56,17 +57,27 @@ export default function Destinations() {
           {sites.map(({ title, subtitle, image, link }) => {
 
             return (
-              <BoxWrapper key={title} style={{ backgroundImage: `url(${image})` }}>
+              <BoxWrapper key={title}>
                 <Link href={link}>
                   <BoxContent>
-                    <BoxTitle>{title}</BoxTitle>
-                    <BoxSubtitle>{subtitle}</BoxSubtitle>
-                    <BoxMore>
-                      Read More
-                      <BoxArrow>
-                        <FaArrowRight />
-                      </BoxArrow>
-                    </BoxMore>
+                    <Image
+                      src={image}
+                      alt={title}
+                      sizes={`100vw, 33vw`}
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className='image'
+                    />
+                    <div className='desc'>
+                      <BoxTitle>{title}</BoxTitle>
+                      <BoxSubtitle>{subtitle}</BoxSubtitle>
+                      <BoxMore>
+                        Read More
+                        <BoxArrow>
+                          <FaArrowRight />
+                        </BoxArrow>
+                      </BoxMore>
+                    </div>
                   </BoxContent>
                 </Link>
               </BoxWrapper>

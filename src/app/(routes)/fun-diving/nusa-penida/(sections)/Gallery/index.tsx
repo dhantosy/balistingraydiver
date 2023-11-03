@@ -7,23 +7,31 @@ import { Section, ImageWrapper, BoxContainer } from './styles'
 
 const data = [
   {
-    image: '/assets/images/gallery-nusa-penida-1.jpg',
+    image: '/assets/images/nusa-penida/nusa-penida-1.jpg',
     alt: 'nusa penida diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-2.jpg',
+    image: '/assets/images/nusa-penida/nusa-penida-2.jpg',
     alt: 'nusa penida diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-3.jpg',
+    image: '/assets/images/nusa-penida/nusa-penida-3.jpg',
     alt: 'nusa penida diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-4.jpg',
+    image: '/assets/images/nusa-penida/nusa-penida-4.jpg',
     alt: 'nusa penida diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-5.jpg',
+    image: '/assets/images/nusa-penida/nusa-penida-5.jpg',
+    alt: 'nusa penida diving',
+  },
+  {
+    image: '/assets/images/nusa-penida/nusa-penida-6.jpg',
+    alt: 'nusa penida diving',
+  },
+  {
+    image: '/assets/images/nusa-penida/nusa-penida-7.jpg',
     alt: 'nusa penida diving',
   },
 ]

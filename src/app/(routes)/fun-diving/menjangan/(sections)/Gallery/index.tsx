@@ -7,24 +7,40 @@ import { Section, ImageWrapper, BoxContainer } from './styles'
 
 const data = [
   {
-    image: '/assets/images/gallery-nusa-penida-1.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/menjangan/menjangan-1.jpg',
+    alt: 'menjangan diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-2.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/menjangan/menjangan-2.jpg',
+    alt: 'menjangan diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-3.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/menjangan/menjangan-3.jpg',
+    alt: 'menjangan diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-4.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/menjangan/menjangan-4.jpg',
+    alt: 'menjangan diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-5.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/menjangan/menjangan-5.jpg',
+    alt: 'menjangan diving',
+  },
+  {
+    image: '/assets/images/menjangan/menjangan-6.jpg',
+    alt: 'menjangan diving',
+  },
+  {
+    image: '/assets/images/menjangan/menjangan-7.jpg',
+    alt: 'menjangan diving',
+  },
+  {
+    image: '/assets/images/menjangan/menjangan-8.jpg',
+    alt: 'menjangan diving',
+  },
+  {
+    image: '/assets/images/menjangan/menjangan-9.jpg',
+    alt: 'menjangan diving',
   },
 ]
 

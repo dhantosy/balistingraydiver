@@ -7,24 +7,44 @@ import { Section, ImageWrapper, BoxContainer } from './styles'
 
 const data = [
   {
-    image: '/assets/images/gallery-nusa-penida-1.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/amed/amed-1.jpg',
+    alt: 'amed diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-2.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/amed/amed-2.jpg',
+    alt: 'amed diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-3.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/amed/amed-3.jpg',
+    alt: 'amed diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-4.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/amed/amed-4.jpg',
+    alt: 'amed diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-5.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/amed/amed-5.jpg',
+    alt: 'amed diving',
+  },
+  {
+    image: '/assets/images/amed/amed-6.jpg',
+    alt: 'amed diving',
+  },
+  {
+    image: '/assets/images/amed/amed-7.jpg',
+    alt: 'amed diving',
+  },
+  {
+    image: '/assets/images/amed/amed-8.jpg',
+    alt: 'amed diving',
+  },
+  {
+    image: '/assets/images/amed/amed-9.jpg',
+    alt: 'amed diving',
+  },
+  {
+    image: '/assets/images/amed/amed-10.jpg',
+    alt: 'amed diving',
   },
 ]
 

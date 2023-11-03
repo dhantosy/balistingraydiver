@@ -3,6 +3,7 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 
 import type { Metadata } from 'next'
+import Script from 'next/script';
 import NextTopLoader from 'nextjs-toploader'
 import { Josefin_Sans, Open_Sans } from 'next/font/google'
 import Footer from '@/app/_components/Footer'
@@ -33,6 +34,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <head>
+        <link rel='apple-touch-icon' sizes='180x180' href='/assets/favicons/apple-touch-icon.png' />
+        <link rel='icon' type='image/png' sizes='32x32' href='/assets/favicons/favicon-32x32.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='/assets/favicons/favicon-16x16.png' />
+        <link rel='manifest' href='/assets/favicons/site.webmanifest' />
+        <link rel='mask-icon' href='/assets/favicons/safari-pinned-tab.svg' color='#000000' />
+        <meta name='msapplication-TileColor' content='#ffffff' />
+        <meta name='theme-color' content='#ffffff' />
+
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-HN4K455H6E' />
+        <Script id='google-analytics'>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-HN4K455H6E');
+        `}
+        </Script>
+      </head>
       <body className={`${josefinSans.variable} ${openSans.variable}`} suppressHydrationWarning>
         <NextTopLoader
           color='#20C7CA'

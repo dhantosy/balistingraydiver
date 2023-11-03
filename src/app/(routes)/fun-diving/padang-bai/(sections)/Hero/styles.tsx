@@ -5,7 +5,7 @@ export const Section = styled.section`
   position: relative;
   height: 500px;
   overflow: hidden;
-  background-image: url('/assets/images/nusa-penida.jpg');
+  background-image: url('/assets/images/padang-bai/padang-bai-5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

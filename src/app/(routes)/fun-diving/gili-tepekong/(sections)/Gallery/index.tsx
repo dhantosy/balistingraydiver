@@ -7,24 +7,36 @@ import { Section, ImageWrapper, BoxContainer } from './styles'
 
 const data = [
   {
-    image: '/assets/images/gallery-nusa-penida-1.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/gili-tepekong/gili-tepekong-1.jpg',
+    alt: 'gili tepekong diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-2.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/gili-tepekong/gili-tepekong-2.jpg',
+    alt: 'gili tepekong diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-3.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/gili-tepekong/gili-tepekong-3.jpg',
+    alt: 'gili tepekong diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-4.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/gili-tepekong/gili-tepekong-4.jpg',
+    alt: 'gili tepekong diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-5.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/gili-tepekong/gili-tepekong-5.jpg',
+    alt: 'gili tepekong diving',
+  },
+  {
+    image: '/assets/images/gili-tepekong/gili-tepekong-6.jpg',
+    alt: 'gili tepekong diving',
+  },
+  {
+    image: '/assets/images/gili-tepekong/gili-tepekong-7.jpg',
+    alt: 'gili tepekong diving',
+  },
+  {
+    image: '/assets/images/gili-tepekong/gili-tepekong-8.jpg',
+    alt: 'gili tepekong diving',
   },
 ]
 

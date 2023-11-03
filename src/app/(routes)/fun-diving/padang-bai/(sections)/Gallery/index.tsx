@@ -7,24 +7,40 @@ import { Section, ImageWrapper, BoxContainer } from './styles'
 
 const data = [
   {
-    image: '/assets/images/gallery-nusa-penida-1.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/padang-bai/padang-bai-1.jpg',
+    alt: 'padang bai diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-2.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/padang-bai/padang-bai-2.jpg',
+    alt: 'padang bai diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-3.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/padang-bai/padang-bai-3.jpg',
+    alt: 'padang bai diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-4.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/padang-bai/padang-bai-4.jpg',
+    alt: 'padang bai diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-5.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/padang-bai/padang-bai-5.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-6.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-7.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-8.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-9.jpg',
+    alt: 'padang bai diving',
   },
 ]
 

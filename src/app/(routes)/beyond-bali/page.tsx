@@ -6,43 +6,43 @@ import { Section, Content, Title, Subtitle, Wrapper, ContentTitle, BoxContainer,
 const sites = [
   {
     title: 'Pulau Weh',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-weh.jpg'
   },
   {
     title: 'Bandar Neira',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-bandaneira.jpg'
   },
   {
     title: 'Gorontalo',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-gorontalo.jpg'
   },
   {
     title: 'Wakatobi',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-wakatobi.jpg'
   },
   {
     title: 'Bunaken',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-bunaken.jpg'
   },
   {
     title: 'Komodo',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-komodo.jpg'
   },
   {
     title: 'Alor',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-alor.jpg'
   },
   {
     title: 'Ambon',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-ambon.jpg'
   },
   {
     title: 'Morotai',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-morotai.jpg'
   },
   {
     title: 'Raja Ampat',
-    image: '/assets/images/gallery-nusa-penida-3.jpg'
+    image: '/assets/images/beyond-bali/diving-rajaampat.jpg'
   },
 ]
 
@@ -68,21 +68,21 @@ export default function BeyondBali() {
           <p>Focusing on personalized service and bespoke itineraries, we meticulously arrange your trip to Indonesia based on your unique interests, ideal travel pace, accommodation preferences, and personal travel style. We use our expert knowledge to seek out the best that the country offers - the best places to stay, the best experiences, the best routes, and we take away the hard work by arranging it all for you. So sit and relax as we help you to experience this amazing country to the fullest!</p>
           <ContentTitle>Our Destinations</ContentTitle>
         </Wrapper>
-        <BoxContainerOuter>
-          <BoxContainer>
-            {sites.map(({ title, image }) => {
-
-              return (
-                <BoxWrapper key={title} style={{ backgroundImage: `url(${image})` }}>
-                  <BoxContent>
-                    <BoxTitle>{title}</BoxTitle>
-                  </BoxContent>
-                </BoxWrapper>
-              )
-            })}
-          </BoxContainer>
-        </BoxContainerOuter>
       </Container>
+      <BoxContainerOuter>
+        <BoxContainer>
+          {sites.map(({ title, image }) => {
+
+            return (
+              <BoxWrapper key={title} style={{ backgroundImage: `url(${image})` }}>
+                <BoxContent>
+                  <BoxTitle>{title}</BoxTitle>
+                </BoxContent>
+              </BoxWrapper>
+            )
+          })}
+        </BoxContainer>
+      </BoxContainerOuter>
     </>
   )
 }

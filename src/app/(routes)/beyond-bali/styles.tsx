@@ -5,21 +5,10 @@ export const Section = styled.section`
   position: relative;
   height: 500px;
   overflow: hidden;
-  background-image: url('/assets/images/nusa-penida.jpg');
+  background-image: url('/assets/images/beyond-bali/banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.3);
-    left: 0;
-    top: 0;
-  }
 
   @media screen and (max-width: 1024px) {
     height: 350px;
@@ -41,14 +30,14 @@ export const Content = styled.div`
   position: relative;
   z-index: 2;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   color: ${theme.colors.white};
   height: 100%;
+  padding-bottom: 40px;
 
   @media screen and (max-width: 1024px) {
-    justify-content: flex-end;
     align-items: flex-start;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 `;
 
@@ -80,6 +69,10 @@ export const ContentTitle = styled.h3`
   font-size: 32px;
   font-weight: 900;
   margin: 80px 0 20px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 40px 0 20px;
+  }
 `;
 
 export const BoxContainer = styled.div`
@@ -101,6 +94,13 @@ export const BoxContainer = styled.div`
 `;
 
 export const BoxContainerOuter = styled.div`
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: auto;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0;
+  }
 `;
 
 export const BoxWrapper = styled.div`

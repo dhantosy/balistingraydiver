@@ -7,24 +7,36 @@ import { Section, ImageWrapper, BoxContainer } from './styles'
 
 const data = [
   {
-    image: '/assets/images/gallery-nusa-penida-1.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/tulamben/tulamben-1.jpg',
+    alt: 'tulamben diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-2.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/tulamben/tulamben-2.jpg',
+    alt: 'tulamben diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-3.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/tulamben/tulamben-3.jpg',
+    alt: 'tulamben diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-4.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/tulamben/tulamben-4.jpg',
+    alt: 'tulamben diving',
   },
   {
-    image: '/assets/images/gallery-nusa-penida-5.jpg',
-    alt: 'nusa penida diving',
+    image: '/assets/images/tulamben/tulamben-5.jpg',
+    alt: 'tulamben diving',
+  },
+  {
+    image: '/assets/images/tulamben/tulamben-6.jpg',
+    alt: 'tulamben diving',
+  },
+  {
+    image: '/assets/images/tulamben/tulamben-8.jpg',
+    alt: 'tulamben diving',
+  },
+  {
+    image: '/assets/images/tulamben/tulamben-9.jpg',
+    alt: 'tulamben diving',
   },
 ]
 

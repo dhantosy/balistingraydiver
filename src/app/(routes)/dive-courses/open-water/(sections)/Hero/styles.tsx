@@ -5,7 +5,7 @@ export const Section = styled.section`
   position: relative;
   height: 500px;
   overflow: hidden;
-  background-image: url('/assets/images/gallery-4.jpg');
+  background-image: url('/assets/images/courses/course-2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

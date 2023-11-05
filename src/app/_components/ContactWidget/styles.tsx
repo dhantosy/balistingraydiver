@@ -3,7 +3,7 @@ import theme from '@/styles/theme';
 
 export const Wrapper = styled.div`
   display: block;
-  background-image: url('/assets/images/gallery-3.jpg');
+  background-image: url('/assets/images/gallery-5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

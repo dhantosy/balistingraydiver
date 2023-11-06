@@ -5,9 +5,6 @@ export const Section = styled.section`
   position: relative;
   height: 500px;
   overflow: hidden;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: ${theme.colors.blueMain};
 
   &:after {

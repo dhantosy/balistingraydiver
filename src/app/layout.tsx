@@ -50,8 +50,8 @@ export default function RootLayout({
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='theme-color' content='#ffffff' />
 
-        <Script src='https://www.googletagmanager.com/gtag/js?id=G-HN4K455H6E' />
-        <Script id='google-analytics'>
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-HN4K455H6E' strategy='afterInteractive' />
+        <Script id='google-analytics' strategy='afterInteractive'>
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

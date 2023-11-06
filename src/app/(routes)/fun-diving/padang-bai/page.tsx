@@ -2,23 +2,66 @@
 
 import Container from '@/app/_components/Container'
 import ContactWidget from '@/app/_components/ContactWidget'
+import Hero from '@/app/_components/Hero'
+import Gallery from '@/app/_components/Gallery'
 
-import Hero from './(sections)/Hero'
 import Intro from './(sections)/Intro'
-import Gallery from './(sections)/Gallery'
 import DetailInfo from './(sections)/DetailInfo'
 
 import { Wrapper, WrapperLeft, WrapperRight, Widget } from './styles'
 
+const data = [
+  {
+    image: '/assets/images/padang-bai/padang-bai-1.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-2.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-3.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-4.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-5.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-6.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-7.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-8.jpg',
+    alt: 'padang bai diving',
+  },
+  {
+    image: '/assets/images/padang-bai/padang-bai-9.jpg',
+    alt: 'padang bai diving',
+  },
+]
+
 export default function PadangBai() {
   return (
     <>
-      <Hero />
+      <Hero
+        title='Padang Bai'
+        subtitle='Explore Padang Bai with Bali Stingray Divers'
+        backgroundImage='/assets/images/padang-bai/padang-bai-5.jpg'
+      />
       <Container>
         <Wrapper>
           <WrapperLeft>
             <Intro />
-            <Gallery />
+            <Gallery data={data} />
             <DetailInfo />
           </WrapperLeft>
           <WrapperRight>

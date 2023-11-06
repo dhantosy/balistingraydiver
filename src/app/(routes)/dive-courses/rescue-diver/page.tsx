@@ -2,8 +2,8 @@
 
 import Container from '@/app/_components/Container'
 import PriceWidget from '@/app/_components/PriceWidget'
+import Hero from '@/app/_components/Hero'
 
-import Hero from './(sections)/Hero'
 import Intro from './(sections)/Intro'
 import DetailInfo from './(sections)/DetailInfo'
 
@@ -12,7 +12,11 @@ import { Wrapper, WrapperLeft, WrapperRight, Widget } from './styles'
 export default function OpenWater() {
   return (
     <>
-      <Hero />
+      <Hero
+        title='EFR & Rescue Diver'
+        subtitle='A step towards going Pro or becoming Master Scuba Diver Become a Respected and Safer Buddy with the PADI Rescue Diver Course.'
+        backgroundImage='/assets/images/courses/course-1.jpg'
+      />
       <Container>
         <Wrapper>
           <WrapperLeft>

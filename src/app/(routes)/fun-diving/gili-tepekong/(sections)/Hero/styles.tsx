@@ -9,6 +9,7 @@ export const Section = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: ${theme.colors.blueMain};
 
   &:after {
     content: '';

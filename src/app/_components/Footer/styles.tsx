@@ -31,6 +31,10 @@ export const Menu = styled.menu`
 
 export const Logo = styled.div`
   display: flex;
+
+  @media screen and (max-width: 1024px) {
+    width: 100px;
+  }
 `;
 
 export const Gallery = styled.section`
@@ -94,7 +98,7 @@ export const GalleryItem = styled.div`
   padding-bottom: 15%;
 
   @media screen and (max-width: 1024px) {
-    padding-bottom: 20%;
+    padding-bottom: 28%;
     flex: 1 1 30%;
   }
 `;

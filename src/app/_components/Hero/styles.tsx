@@ -5,7 +5,6 @@ export const Section = styled.section`
   position: relative;
   height: 500px;
   overflow: hidden;
-  background-image: url('/assets/images/padang-bai/padang-bai-5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +22,8 @@ export const Section = styled.section`
   }
 
   @media screen and (max-width: 1024px) {
-    height: 350px;
+    height: 300px;
+    margin-top: 50px;
   }
 `;
 

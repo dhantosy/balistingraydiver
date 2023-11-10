@@ -49,6 +49,7 @@ export default function RootLayout({
         <link rel='mask-icon' href='/assets/favicons/safari-pinned-tab.svg' color='#000000' />
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='theme-color' content='#ffffff' />
+        <meta name='google-site-verification' content='-JCDVwFQrX0nqoy21pWTjBf8QBCs1Mmqyaglp2_FzB8' />
 
         <Script src='https://www.googletagmanager.com/gtag/js?id=G-HN4K455H6E' strategy='afterInteractive' />
         <Script id='google-analytics' strategy='afterInteractive'>

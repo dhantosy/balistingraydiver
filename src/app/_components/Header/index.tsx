@@ -1,4 +1,3 @@
-/* eslint-disable react/no-children-prop */
 'use client'
 
 import React from 'react'
@@ -20,6 +19,7 @@ import {
   TextHasDropdown,
   Icon,
   MobileMenuContainer,
+  LogoName,
 } from './styles'
 import Container from '../Container'
 import { useScrollPosition}  from '@/hooks/useScrollPosition';
@@ -171,23 +171,28 @@ export default function Header() {
           <Link href='/'>
             <Logo $active={active} className='desktop'>
               {active ? (
-                <Image
-                  src="/assets/images/logo-black.png"
-                  alt="Bali Stingray Diver"
-                  sizes={`100vw, 33vw`}
-                  priority
-                  width='50'
-                  height='50'
-                />
+                <>
+                  <Image
+                    src="/assets/images/logo-black.png"
+                    alt="Bali Stingray Diver"
+                    sizes={`100vw, 33vw`}
+                    priority
+                    width='50'
+                    height='50'
+                  />
+                  <LogoName>Bali Stingray Divers</LogoName>
+                </>
               ) : (
-                <Image
-                  src="/assets/images/logo-white.png"
-                  alt="Bali Stingray Diver"
-                  sizes={`100vw, 33vw`}
-                  priority
-                  width='150'
-                  height='150'
-                />
+                <>
+                  <Image
+                    src="/assets/images/logo-white.png"
+                    alt="Bali Stingray Diver"
+                    sizes={`100vw, 33vw`}
+                    priority
+                    width='150'
+                    height='150'
+                  />
+                </>
               )}
             </Logo>
             <Logo className='mobile'>
@@ -199,6 +204,7 @@ export default function Header() {
                 width='50'
                 height='50'
               />
+              <LogoName>Bali Stingray Divers</LogoName>
             </Logo>
           </Link>
           <Menu>

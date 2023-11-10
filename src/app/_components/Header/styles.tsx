@@ -52,6 +52,8 @@ export const MenuItem = styled.div`
 
 export const Logo = styled.div<{ $active?: boolean; }>`
   display: flex;
+  gap: 15px;
+  align-items: center;
   padding: ${props => props.$active ? '0' : '15px 0 0'};
 
   &.mobile {
@@ -67,6 +69,20 @@ export const Logo = styled.div<{ $active?: boolean; }>`
 
     &.mobile {
       display: flex;
+    }
+  }
+`;
+
+export const LogoName = styled.div`
+  color: ${theme.colors.blueMain};
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.2;
+
+  @media screen and (max-width: 360px) {
+    & {
+      font-size: 14px;
     }
   }
 `;

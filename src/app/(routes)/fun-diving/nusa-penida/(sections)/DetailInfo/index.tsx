@@ -13,7 +13,7 @@ export default function DetailInfo() {
             <Icon>
               <FaCheckCircle />
             </Icon>
-            2X Dives
+            3X Dives
           </ListItem>
           <ListItem>
             <Icon>
@@ -104,7 +104,7 @@ export default function DetailInfo() {
         <PricingWrapper>
           <Pricing>
             <PricingTitle>Certified Diver</PricingTitle>
-            <PricingTag>IDR 2.300.000</PricingTag>
+            <PricingTag>IDR 2.750.000</PricingTag>
           </Pricing>
           <Pricing>
             <PricingTitle>Discover Scuba Diving</PricingTitle>

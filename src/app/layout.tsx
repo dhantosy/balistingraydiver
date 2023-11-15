@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  robots: 'index, follow',
   title: 'Bali Stingray Divers',
   description: 'Dive Into the World of Underwater Exploration with Bali Stingray Divers, One of the Most Trusted Dive Center in Bali.',
   keywords: 'Dive Center, Bali Dive Center, Scuba Dive Bali, Nusa Penida Diving, Tulamben Diving, Amed Diving, Menjangan Diving, Scuba Diving, Stingray, Bali, Diving',

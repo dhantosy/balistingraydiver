@@ -23,6 +23,10 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.balistingraydiver.com'),
+  alternates: {
+    canonical: '/',
+  },
   title: 'Bali Stingray Divers',
   description: 'Dive Into the World of Underwater Exploration with Bali Stingray Divers, One of the Most Trusted Dive Center in Bali.',
   keywords: 'Dive Center, Bali Dive Center, Scuba Dive Bali, Nusa Penida Diving, Tulamben Diving, Amed Diving, Menjangan Diving, Scuba Diving, Stingray, Bali, Diving',
@@ -32,7 +36,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: '/assets/images/banner-fb.jpg'
   }
-}
+};
 
 export default function RootLayout({
   children,

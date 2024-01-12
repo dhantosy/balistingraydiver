@@ -25,8 +25,8 @@ export default function OpenWater() {
             <Widget>
               <PriceWidget
                 title='Divemaster Certification'
-                price='ASK US'
-                duration=''
+                price='>= IDR 15.000.000'
+                duration='3 Weeks'
                 location=''
                 sessions=''
                 depth=''

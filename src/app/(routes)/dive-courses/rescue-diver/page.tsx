@@ -28,9 +28,9 @@ export default function OpenWater() {
               <PriceWidget
                 title='EFR & Rescue Diver Certification'
                 price='IDR 7.500.000'
-                duration='2 Days'
+                duration='3 Days'
                 location='Bali Stingray Divers pool and Sanur Reef'
-                sessions='Pool sessions and 3 Ocean Dives'
+                sessions='Pool sessions and 2 Ocean Dives'
                 depth=''
               />
             </Widget>

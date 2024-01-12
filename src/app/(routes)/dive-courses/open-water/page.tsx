@@ -27,7 +27,7 @@ export default function OpenWater() {
             <Widget>
               <PriceWidget
                 title='Open Water Diving Certification'
-                price='IDR 6.900.000'
+                price='IDR 6.950.000'
                 duration='3 Days with E-Learning'
                 location='Tulamben, Amed, or Padang Bai'
                 sessions='Pool sessions and 4 Ocean Dives'

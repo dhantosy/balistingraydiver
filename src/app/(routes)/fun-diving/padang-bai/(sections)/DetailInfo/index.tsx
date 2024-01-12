@@ -104,7 +104,7 @@ export default function DetailInfo() {
         <PricingWrapper>
           <Pricing>
             <PricingTitle>Certified Diver</PricingTitle>
-            <PricingTag>IDR 1.750.000</PricingTag>
+            <PricingTag>IDR 1.950.000</PricingTag>
           </Pricing>
           <Pricing>
             <PricingTitle>Discover Scuba Diving</PricingTitle>
@@ -112,7 +112,7 @@ export default function DetailInfo() {
           </Pricing>
           <Pricing>
             <PricingTitle>Snorkeling</PricingTitle>
-            <PricingTag>IDR 900.000</PricingTag>
+            <PricingTag>IDR 950.000</PricingTag>
           </Pricing>
         </PricingWrapper>
       </PricingSection>

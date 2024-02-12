@@ -192,7 +192,7 @@ export default function Footer() {
               </CopyrightSocialItem>
             </a>
           </CopyrightSocial>
-          Bali Stingray Divers © 2023. All Rights Reserved.
+          Bali Stingray Divers © 2024. All Rights Reserved.
         </Copyright>
       </Container>
     </FooterNav>
